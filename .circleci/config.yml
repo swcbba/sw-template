@@ -48,6 +48,9 @@ jobs:
       - restore_cache:
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
       - run:
+          name: Install deploy tool
+          command: npm install --save-dev firebase-tools
+      - run:
           name: Deploy project
           command: npm run deploy -- --token=$FIREBASE_DEPLOY_TOKEN
 
@@ -67,5 +70,4 @@ workflows:
           filters:
             branches:
               only:
-                - develop
                 - master
