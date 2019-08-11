@@ -24,14 +24,14 @@ jobs:
           name: Linting
           command: npm run lint
       - run:
+          name: Inject keys
+          command: npm run keys:inject
+      - run:
           name: Testing
           command: npm run test
       - run:
           name: Building
           command: npm run build
-      - run:
-          name: Inject keys
-          command: npm run keys:inject
       - save_cache:
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
