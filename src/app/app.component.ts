@@ -9,6 +9,7 @@ import { LanguageService } from './core/services/language.service';
 })
 export class AppComponent {
   constructor(private languageService: LanguageService) {}
+  
   ngOnInit(): void {
     this.languageService.setDefaultLanguage();
   }
