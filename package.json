@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
+    "build": "ng build --prod",
+    "test": "ng test --watch=false",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "firebase deploy"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +39,7 @@
     "@types/materialize-css": "^1.0.6",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "firebase-tools": "^7.2.2",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
