@@ -11,7 +11,11 @@
           <li><a href="#">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
           <li><a href="#">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
           <li><a href="#">{{ 'NAVBAR.PARTNERS' | translate }}</a></li>
-          <li><a class="waves-effect waves-light btn register" href="#">{{ 'NAVBAR.SUBSCRIBE' | translate }}</a></li>
+          <li>
+            <a class="waves-effect waves-light btn register" href="#">
+              {{ 'NAVBAR.SUBSCRIBE' | translate }}
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -19,10 +23,14 @@
 
   <ul swSidenav class="sidenav" id="mobile-menu">
     <li><a class="sidenav-close" href="#banner">{{ 'NAVBAR.HOME' | translate }}</a></li>
-    <li><a class="sidenav-close"  href="#" class="">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
-    <li><a class="sidenav-close"  href="#">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
-    <li><a class="sidenav-close"  href="#">{{ 'NAVBAR.PARTNERS' | translate }}</a></li>
-    <li><a class="sidenav-close"  class="waves-effect waves-light btn register sidenav-close" href="#">{{ 'NAVBAR.SUBSCRIBE' | translate }}</a></li>
+    <li><a class="sidenav-close" href="#" class="">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
+    <li><a class="sidenav-close" href="#">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
+    <li><a class="sidenav-close" href="#">{{ 'NAVBAR.PARTNERS' | translate }}</a></li>
+    <li>
+      <a class="sidenav-close" class="waves-effect waves-light btn register sidenav-close" href="#">
+        {{ 'NAVBAR.SUBSCRIBE' | translate }}
+      </a>
+    </li>
   </ul>
 
   <div id="navbar-background"></div>
