@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { EventResources } from '../../shared/constants/event-resources.constant';
+import { RegistrationFormUrl } from '../../shared/constants/event-data.constant';
 
 @Component({
   selector: 'sw-banner',
@@ -8,5 +8,5 @@ import { EventResources } from '../../shared/constants/event-resources.constant'
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent {
-  registrationFormUrl = EventResources.registrationFormUrl;
+  registrationFormUrl = RegistrationFormUrl;
 }
