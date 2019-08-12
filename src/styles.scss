@@ -31,3 +31,17 @@ a {
   position: relative;
   z-index: 997;
 }
+
+.parallax-container {
+  height: calc(100vh - 56px);
+  min-height: $parallax-min-height;
+  background-color: rgba($primary-color-dark, 0.5);
+
+  @media #{$medium-and-up} {
+    height: calc(100vh - 64px);
+  }
+
+  &-data {
+    width: 100%;
+  }
+}

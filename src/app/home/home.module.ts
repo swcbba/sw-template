@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
+import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about/about.component';
 import { BannerComponent } from './banner/banner.component';
@@ -20,6 +21,6 @@ import { ScrollSpyDirective } from './scroll-spy.directive';
     PartnersComponent,
     ScrollSpyDirective
   ],
-  imports: [CommonModule, HomeRoutingModule]
+  imports: [CommonModule, HomeRoutingModule, SharedModule]
 })
 export class HomeModule {}
