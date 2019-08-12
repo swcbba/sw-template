@@ -8,5 +8,12 @@
     "EVENTS": "Events",
     "PARTNERS": "Partners",
     "SUBSCRIBE": "Subscribe"
+  },
+  "COUNTDOWN": {
+    "DAYS": "Days",
+    "HOURS": "Hours",
+    "MINUTES": "Minutes",
+    "SECONDS": "Seconds",
+    "ALREADY_STARTED": "The event already started"
   }
 }
