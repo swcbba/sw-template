@@ -1,6 +1,15 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import {
+  TranslateModule,
+  TranslateLoader,
+  TranslateFakeLoader
+} from '@ngx-translate/core';
+
 import { HomeComponent } from './home.component';
+import { CountdownComponent } from './countdown/countdown.component';
+import { CountdownService } from './countdown/countdown.service';
+import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -8,7 +17,13 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HomeComponent]
+      declarations: [HomeComponent, CountdownComponent, TwoDigitsTransformPipe],
+      imports: [
+        TranslateModule.forRoot({
+          loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
+        })
+      ],
+      providers: [CountdownService]
     }).compileComponents();
   }));
 

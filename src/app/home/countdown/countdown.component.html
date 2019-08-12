@@ -1,4 +1,4 @@
-<div class="center-align">
+<div class="container section center-align">
   <ng-container *ngIf="!countdownService.eventAlreadyStarted">
     <ng-container *ngIf="(countdownService.timeRemaining$ | async) as timeRemaining">
       <div class="hide-on-small-only">
@@ -9,7 +9,7 @@
                 <h4>{{ timeRemaining.days | twoDigitsTransform }}</h4>
               </div>
               <div class="card-content">
-                <span class="highlight-text">Days</span>
+                <span class="highlight-text">{{ 'HOME.COUNTDOWN.DAYS' | translate }}</span>
               </div>
             </div>
           </div>
@@ -19,7 +19,7 @@
                 <h4>{{ timeRemaining.hours | twoDigitsTransform }}</h4>
               </div>
               <div class="card-content">
-                <span class="highlight-text">Hours</span>
+                <span class="highlight-text">{{ 'HOME.COUNTDOWN.HOURS' | translate }}</span>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@
                 <h4>{{ timeRemaining.minutes | twoDigitsTransform }}</h4>
               </div>
               <div class="card-content">
-                <span class="highlight-text">Minutes</span>
+                <span class="highlight-text">{{ 'HOME.COUNTDOWN.MINUTES' | translate }}</span>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@
                 <h4>{{ timeRemaining.seconds | twoDigitsTransform }}</h4>
               </div>
               <div class="card-content">
-                <span class="highlight-text">Seconds</span>
+                <span class="highlight-text">{{ 'HOME.COUNTDOWN.SECONDS' | translate }}</span>
               </div>
             </div>
           </div>
@@ -50,9 +50,9 @@
           <div class="col s12">
             <div class="card section">
               <b class="truncate">
-                Days: {{ timeRemaining.days | twoDigitsTransform }} |
-                Hours: {{ timeRemaining.hours | twoDigitsTransform }} |
-                Minutes: {{ timeRemaining.minutes | twoDigitsTransform }}
+                {{ 'HOME.COUNTDOWN.DAYS' | translate }}: {{ timeRemaining.days | twoDigitsTransform }} |
+                {{ 'HOME.COUNTDOWN.HOURS' | translate }}: {{ timeRemaining.hours | twoDigitsTransform }} |
+                {{ 'HOME.COUNTDOWN.MINUTES' | translate }}: {{ timeRemaining.minutes | twoDigitsTransform }}
               </b>
             </div>
           </div>
@@ -61,6 +61,6 @@
     </ng-container>
   </ng-container>
   <ng-container *ngIf="countdownService.eventAlreadyStarted">
-    The event already started
+    {{ 'HOME.COUNTDOWN.ALREADY_STARTED' | translate }}
   </ng-container>
 </div>

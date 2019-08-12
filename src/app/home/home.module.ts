@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about/about.component';
@@ -23,7 +25,7 @@ import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
     ScrollSpyDirective,
     TwoDigitsTransformPipe
   ],
-  imports: [CommonModule, HomeRoutingModule],
+  imports: [CommonModule, HomeRoutingModule, TranslateModule],
   providers: [CountdownService]
 })
 export class HomeModule {}
