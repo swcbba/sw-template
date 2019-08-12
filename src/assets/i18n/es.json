@@ -1,13 +1,20 @@
 {
   "HOME": {
-    "TITLE": "Inicio",
-    "COUNTDOWN": {
-      "DAYS": "Días",
-      "HOURS": "Horas",
-      "MINUTES": "Minutos",
-      "SECONDS": "Segundos",
-      "ALREADY_STARTED": "El evento ya ha dado inicio"
-    }
+    "TITLE": "Inicio"
+  },
+  "NAVBAR": {
+    "HOME": "Inicio",
+    "ABOUT": "Acerca de",
+    "EVENTS": "Eventos",
+    "PARTNERS": "Patrocinadores",
+    "SUBSCRIBE": "Inscríbete"
+  },
+  "COUNTDOWN": {
+    "DAYS": "Días",
+    "HOURS": "Horas",
+    "MINUTES": "Minutos",
+    "SECONDS": "Segundos",
+    "ALREADY_STARTED": "El evento ya ha dado inicio"
   },
   "MAIN_EVENT": {
     "NAME": "Startup Weekend",
