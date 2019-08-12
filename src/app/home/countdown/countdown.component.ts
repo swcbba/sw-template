@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { CountdownService } from './countdown.service';
 
@@ -7,8 +7,6 @@ import { CountdownService } from './countdown.service';
   templateUrl: './countdown.component.html',
   styleUrls: ['./countdown.component.scss']
 })
-export class CountdownComponent implements OnInit {
+export class CountdownComponent {
   constructor(public countdownService: CountdownService) {}
-
-  ngOnInit(): void {}
 }

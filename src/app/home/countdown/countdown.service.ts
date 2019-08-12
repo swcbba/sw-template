@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Subject, Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import * as moment from 'moment';
 
 import { TimeRemaining } from '../../shared/models/time-remaining.model';
