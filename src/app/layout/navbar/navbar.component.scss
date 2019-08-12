@@ -22,18 +22,8 @@ nav {
   }
 }
 
-.brand-logo {
+#sw-logotype {
   height: 100%;
   object-fit: contain;
   padding: 7px 1%;
-}
-
-.register {
-  background-color: $highlight-color;
-  color: $primary-color;
-  font-weight: bolder;
-
-  @media #{$medium-and-down} {
-    background-color: $primary-color;
-  }
 }

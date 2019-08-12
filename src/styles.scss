@@ -22,6 +22,11 @@ a {
   cursor: pointer;
 }
 
+.btn {
+  color: $primary-color !important;
+  font-weight: bold !important;
+}
+
 .section {
   padding-top: 50px;
   padding-bottom: 50px;

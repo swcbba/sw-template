@@ -4,8 +4,7 @@ import { CountdownService } from './countdown.service';
 
 @Component({
   selector: 'sw-countdown',
-  templateUrl: './countdown.component.html',
-  styleUrls: ['./countdown.component.scss']
+  templateUrl: './countdown.component.html'
 })
 export class CountdownComponent {
   constructor(public countdownService: CountdownService) {}

@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { HomeRoutingModule } from './home-routing.module';
-import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about/about.component';
 import { BannerComponent } from './banner/banner.component';
@@ -14,6 +13,8 @@ import { MetricsComponent } from './metrics/metrics.component';
 import { PartnersComponent } from './partners/partners.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
+import { ParallaxDirective } from '../shared/directives/parallax/parallax.directive';
+import { TransparentNavbarDirective } from '../shared/directives/transparent-navbar/transparent-navbar.directive';
 
 @NgModule({
   declarations: [
@@ -24,9 +25,11 @@ import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
     MetricsComponent,
     PartnersComponent,
     ScrollSpyDirective,
-    TwoDigitsTransformPipe
+    TwoDigitsTransformPipe,
+    ParallaxDirective,
+    TransparentNavbarDirective
   ],
-  imports: [CommonModule, HomeRoutingModule, TranslateModule, SharedModule],
+  imports: [CommonModule, HomeRoutingModule, TranslateModule],
   providers: [CountdownService]
 })
 export class HomeModule {}

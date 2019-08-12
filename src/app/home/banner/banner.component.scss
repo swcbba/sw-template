@@ -1,52 +1,45 @@
 @import '../../../styles.colors';
+@import '../../../styles.variables';
 
 .parallax-container {
   height: 100vh;
 }
 
-.border-place-and-date {
-  box-sizing: border-box;
-  border: 1px solid #FFFFFF;
-  color: $highlight-color;
-  margin-top: 50px;
-  padding: 16px;
-  display:inline;
-}
-
-.space {
-  display: block;
-  height: 50px;
-}
-
-.about {
-  color: $highlight-color;
-  text-align: center;
-  font-weight: bold;
-  line-height: 27px;
-}
-
-.sign-up {
-  color: #C32137;
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0.38px;
-  text-align: center;
-}
-
-#place-and-date,
-.section-title {
-  color: $highlight-color;
-  font-weight: 800;
-}
-
-#banner-logo-icon {
+#sw-isotype {
   width: 180px;
   height: auto;
   max-width: 100%;
 }
 
-#banner-logo {
+#sw-logotype {
   width: 450px;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+#place-and-date {
+  padding: 15px;
+  border: 1px solid $secondary-color;
+  font-weight: bolder;
+  color: $secondary-color;
+
+  @media #{$medium-and-up} {
+    display: inline;
+  }
+}
+
+#slogan {
+  margin-top: 50px;
+  font-weight: bolder;
+  color: $secondary-color;
+
+  @media #{$medium-and-up} {
+    font-size: $h1-fontsize;
+  }
+}
+
+#sw-detail {
+  margin-bottom: 70px;
+  color: $secondary-color;
 }

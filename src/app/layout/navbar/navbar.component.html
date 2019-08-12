@@ -2,7 +2,7 @@
   <nav class="transparent">
     <div class="nav-wrapper">
       <div>
-        <a routerLink="/"><img class="brand-logo" src="assets/images/sww-logo-white.png" alt="SW Women"></a>
+        <a routerLink="/"><img id="sw-logotype" src="assets/images/sww-logo-white.png" [alt]="eventName"></a>
         <a data-target="mobile-menu" class="sidenav-trigger">
           <i class="fas fa-bars"></i>
         </a>
@@ -12,8 +12,8 @@
           <li><a href="#events">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
           <li><a href="#partners">{{ 'NAVBAR.PARTNERS' | translate }}</a></li>
           <li>
-            <a class="waves-effect waves-light btn register" href="#">
-              {{ 'NAVBAR.SUBSCRIBE' | translate }}
+            <a class="btn waves-effect waves-light register" href="#">
+              {{ 'NAVBAR.REGISTER' | translate }}
             </a>
           </li>
         </ul>
@@ -27,8 +27,9 @@
     <li><a class="sidenav-close" href="#events">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
     <li><a class="sidenav-close" href="#partners">{{ 'NAVBAR.PARTNERS' | translate }}</a></li>
     <li>
-      <a class="sidenav-close" class="waves-effect waves-light btn register sidenav-close" href="#">
-        {{ 'NAVBAR.SUBSCRIBE' | translate }}
+      <a class="sidenav-close" class="waves-effect waves-light btn register sidenav-close" [href]="registrationFormURL"
+        target="_blank" rel="noopener noreferrer">
+        {{ 'NAVBAR.REGISTER' | translate }}
       </a>
     </li>
   </ul>

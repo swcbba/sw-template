@@ -1,10 +1,20 @@
-import { Directive, ElementRef, HostListener } from '@angular/core';
+import {
+  Directive,
+  OnInit,
+  Renderer2,
+  ElementRef,
+  HostListener
+} from '@angular/core';
 
 @Directive({
   selector: '[swTransparentNavbar]'
 })
-export class TransparentNavbarDirective {
-  constructor(private elementRef: ElementRef) {}
+export class TransparentNavbarDirective implements OnInit {
+  constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
+
+  ngOnInit(): void {
+    this.renderer.addClass(this.elementRef.nativeElement, 'top-section');
+  }
 
   @HostListener('window:scroll')
   onWindowsScroll(): void {
