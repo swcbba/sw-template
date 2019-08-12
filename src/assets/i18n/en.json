@@ -1,6 +1,13 @@
 {
   "HOME": {
-    "TITLE": "Home"
+    "TITLE": "Home",
+    "COUNTDOWN": {
+      "DAYS": "Days",
+      "HOURS": "Hours",
+      "MINUTES": "Minutes",
+      "SECONDS": "Seconds",
+      "ALREADY_STARTED": "The event already started"
+    }
   },
   "main-event": {
     "name": "Startup Weekend",

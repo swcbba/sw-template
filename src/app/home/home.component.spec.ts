@@ -8,6 +8,9 @@ import {
 
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
+import { CountdownComponent } from './countdown/countdown.component';
+import { CountdownService } from './countdown/countdown.service';
+import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -15,12 +18,13 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HomeComponent, BannerComponent],
+      declarations: [HomeComponent, BannerComponent, CountdownComponent, TwoDigitsTransformPipe],
       imports: [
         TranslateModule.forRoot({
           loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
         })
-      ]
+      ],
+      providers: [CountdownService]
     }).compileComponents();
   }));
 
