@@ -24,6 +24,9 @@ jobs:
           name: Linting
           command: npm run lint
       - run:
+          name: Inject keys
+          command: npm run keys:inject
+      - run:
           name: Testing
           command: npm run test
       - run:

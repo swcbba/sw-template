@@ -8,6 +8,8 @@
     "test": "ng test --watch=false",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "keys:create": "cat ./src/environments/keys.template.ts > ./src/environments/keys.ts",
+    "keys:inject": "echo $KEYS > ./src/environments/keys.ts",
     "deploy": "firebase deploy"
   },
   "private": true,
@@ -21,6 +23,8 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
+    "@ngx-translate/core": "^11.0.1",
+    "@ngx-translate/http-loader": "^4.0.0",
     "firebase": "^6.3.5",
     "materialize-css": "^1.0.0-rc.2",
     "moment": "^2.24.0",
