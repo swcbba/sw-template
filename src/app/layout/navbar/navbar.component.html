@@ -2,15 +2,15 @@
   <nav class="transparent">
     <div class="nav-wrapper">
       <div>
-        <a routerLink="/"><img class="brand-logo" src="assets/images/sww-logo-white.png" alt="GP4Tech"></a>
+        <a routerLink="/"><img class="brand-logo" src="assets/images/sww-logo-white.png" alt="SW Women"></a>
         <a data-target="mobile-menu" class="sidenav-trigger">
           <i class="fas fa-bars"></i>
         </a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#banner">{{ 'NAVBAR.HOME' | translate }}</a></li>
-          <li><a href="#">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
-          <li><a href="#">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
-          <li><a href="#">{{ 'NAVBAR.PARTNERS' | translate }}</a></li>
+          <li><a href="#about">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
+          <li><a href="#events">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
+          <li><a href="#partners">{{ 'NAVBAR.PARTNERS' | translate }}</a></li>
           <li>
             <a class="waves-effect waves-light btn register" href="#">
               {{ 'NAVBAR.SUBSCRIBE' | translate }}
@@ -23,9 +23,9 @@
 
   <ul swSidenav class="sidenav" id="mobile-menu">
     <li><a class="sidenav-close" href="#banner">{{ 'NAVBAR.HOME' | translate }}</a></li>
-    <li><a class="sidenav-close" href="#" class="">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
-    <li><a class="sidenav-close" href="#">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
-    <li><a class="sidenav-close" href="#">{{ 'NAVBAR.PARTNERS' | translate }}</a></li>
+    <li><a class="sidenav-close" href="#about" class="">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
+    <li><a class="sidenav-close" href="#events">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
+    <li><a class="sidenav-close" href="#partners">{{ 'NAVBAR.PARTNERS' | translate }}</a></li>
     <li>
       <a class="sidenav-close" class="waves-effect waves-light btn register sidenav-close" href="#">
         {{ 'NAVBAR.SUBSCRIBE' | translate }}
