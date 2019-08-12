@@ -13,8 +13,8 @@ import { MetricsComponent } from './metrics/metrics.component';
 import { PartnersComponent } from './partners/partners.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
-import { ParallaxDirective } from '../shared/directives/parallax/parallax.directive';
-import { TransparentNavbarDirective } from '../shared/directives/transparent-navbar/transparent-navbar.directive';
+import { ParallaxModule } from '../shared/directives/parallax/parallax.module';
+import { TransparentNavbarModule } from '../shared/directives/transparent-navbar/transparent-navbar.module';
 
 @NgModule({
   declarations: [
@@ -25,11 +25,15 @@ import { TransparentNavbarDirective } from '../shared/directives/transparent-nav
     MetricsComponent,
     PartnersComponent,
     ScrollSpyDirective,
-    TwoDigitsTransformPipe,
-    ParallaxDirective,
-    TransparentNavbarDirective
+    TwoDigitsTransformPipe
   ],
-  imports: [CommonModule, HomeRoutingModule, TranslateModule],
+  imports: [
+    CommonModule,
+    HomeRoutingModule,
+    TranslateModule,
+    ParallaxModule,
+    TransparentNavbarModule
+  ],
   providers: [CountdownService]
 })
 export class HomeModule {}
