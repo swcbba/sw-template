@@ -1,5 +1,12 @@
 {
   "HOME": {
     "TITLE": "Inicio"
+  },
+  "NAVBAR": {
+    "HOME": "Inicio",
+    "ABOUT": "Acerca de",
+    "EVENTS": "Eventos",
+    "PARTNERS": "Patrocinadores",
+    "SUBSCRIBE": "Inscríbete"
   }
 }

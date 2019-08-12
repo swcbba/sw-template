@@ -1,5 +1,12 @@
 {
   "HOME": {
     "TITLE": "Home"
+  },
+  "NAVBAR": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "EVENTS": "Events",
+    "PARTNERS": "Partners",
+    "SUBSCRIBE": "Subscribe"
   }
 }
