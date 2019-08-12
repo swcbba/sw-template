@@ -1,1 +1,22 @@
-<p>banner works!</p>
+<div swTransparentNavbar class="parallax-container top-section valign-wrapper">
+  <div class="parallax-container-data center-align">
+    <div class="container">
+      <div class="row">
+        <img id="banner-logo-icon" src="assets/images/banner/sww-illustration.png" [alt]="'MAIN_EVENT.NAME' | translate">
+        <br>
+        <img id="banner-logo" src="assets/images/banner/sww-logo-white.png" [alt]="'MAIN_EVENT.NAME' | translate">
+        <span class="space"></span>
+        <h6 id="place-and-date" class="border-place-and-date">{{ 'MAIN_EVENT.PLACE_AND_DATE' | translate }}</h6>
+        <h1 class="section-title">{{ 'MAIN_EVENT.SLOGAN' | translate }}</h1>
+        <h6 class="about">{{ 'ABOUT.DETAIL' | translate }}</h6>
+        <br>
+        <a class="btn-large white sign-up" [href]="registrationFormUrl" target="_blank" rel="noopener noreferrer">
+          {{ 'MAIN_EVENT.CALL_TO_ACTION' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+  <div swParallax class="parallax">
+    <img src="assets/images/banner/mainbg.png" [alt]="'MAIN_EVENT.NAME' | translate">
+  </div>
+</div>

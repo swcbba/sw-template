@@ -15,5 +15,14 @@
     "MINUTES": "Minutes",
     "SECONDS": "Seconds",
     "ALREADY_STARTED": "The event already started"
+  },
+  "MAIN_EVENT": {
+    "NAME": "Startup Weekend",
+    "SLOGAN": "Dare to show your power",
+    "PLACE_AND_DATE": "Cochabamba. 20-22 September, 2019",
+    "CALL_TO_ACTION": "REGISTER"
+  },
+  "ABOUT": {
+    "DETAIL": "Learn to start a business in just 54 hours, meet the best mentors, investors, co-founders and sponsors who are ready to help you get started. Your community is here to help you: Sign up for the event today!"
   }
 }

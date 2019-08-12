@@ -1,5 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { TranslateFakeLoader, TranslateLoader, TranslateModule } from '@ngx-translate/core';
+
 import { BannerComponent } from './banner.component';
 
 describe('BannerComponent', () => {
@@ -8,7 +10,10 @@ describe('BannerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BannerComponent ]
+      declarations: [ BannerComponent ],
+      imports: [TranslateModule.forRoot({
+        loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
+      })]
     })
     .compileComponents();
   }));
