@@ -2,18 +2,16 @@
   <div class="parallax-container-data center-align">
     <div class="container">
       <div class="row">
-        <img id="banner-logo-icon" src="assets/images/banner/sww-illustration.png" [alt]="'Startup Weekend'">
+        <img id="banner-logo-icon" src="assets/images/banner/sww-illustration.png" [alt]="'main-event.name' | translate">
         <br/>
-        <img id="banner-logo" src="assets/images/banner/sww-logo-white.png" [alt]="'Startup Weekend'">
+        <img id="banner-logo" src="assets/images/banner/sww-logo-white.png" [alt]="'main-event.name' | translate">
         <span class="space"></span>
-        <h6 id="place-and-date" class="border-place-and-date">Cochabamba. 20-22 September, 2019</h6>
-        <h1 class="section-title">Dare to show your power</h1>
-        <h6 class="about">Learn to start a business in just 54 hours, meet the best mentors, investors, co-founders and
-          sponsors who are ready to help you get started. Your community is here to help you: Sign up for the event
-          today!</h6>
+        <h6 id="place-and-date" class="border-place-and-date">{{ 'main-event.place-and-date' | translate }}</h6>
+        <h1 class="section-title">{{ 'main-event.slogan' | translate }}</h1>
+        <h6 class="about">{{ 'about.detail' | translate }}</h6>
         <br/>
         <a class="btn-large white sign-up" [href]="registrationFormUrl" target="_blank" rel="noopener noreferrer">
-          GET TICKET
+          {{ 'main-event.call-to-action' | translate }}
         </a>
       </div>
     </div>
