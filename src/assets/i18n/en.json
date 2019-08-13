@@ -21,6 +21,12 @@
       "MINUTES": "Minutes",
       "SECONDS": "Seconds",
       "ALREADY_STARTED": "The event already started"
+    },
+    "ABOUT": {
+      "TITLE": "What is Startup Weekend?",
+      "DESCRIPTION": "is a global movement, a 54-hour weekend event that brings together innovators, entrepreneurs, creators, developers, startup enthusiasts, designers and more to launch ideas and form teams to develop a startup during the course of a weekend . On the last day (Sunday), participants give their final speech at a panel of judges that determines the winners.",
+      "DATE": "September 20-22",
+      "PLACE": "Place: Main auditorium of the Society of Engineers of Bolivia (SIB)"
     }
   }
 }

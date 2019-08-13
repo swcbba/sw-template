@@ -10,6 +10,7 @@ import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { CountdownService } from './countdown/countdown.service';
+import { AboutComponent } from './about/about.component';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 
 describe('HomeComponent', () => {
@@ -18,7 +19,13 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HomeComponent, BannerComponent, CountdownComponent, TwoDigitsTransformPipe],
+      declarations: [
+        HomeComponent,
+        BannerComponent,
+        CountdownComponent,
+        AboutComponent,
+        TwoDigitsTransformPipe
+      ],
       imports: [
         TranslateModule.forRoot({
           loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
