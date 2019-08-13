@@ -22,19 +22,27 @@ a {
   cursor: pointer;
 }
 
+p {
+  font-size: $paragraph-font-size;
+}
+
 .btn {
   color: $primary-color !important;
   font-weight: bold !important;
 }
 
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 .top-section {
   position: relative;
   z-index: 997;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &-title {
+    font-weight: bold;
+  }
 }
 
 .parallax-container {
