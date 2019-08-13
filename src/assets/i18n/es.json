@@ -21,6 +21,12 @@
       "MINUTES": "Minutos",
       "SECONDS": "Segundos",
       "ALREADY_STARTED": "El evento ya ha dado inicio"
+    },
+    "ABOUT": {
+      "TITLE": "¿Qué es Startup Weekend?",
+      "DESCRIPTION": "es un movimiento global, un evento de 54 horas de fin de semana que reúne a innovadores, empresarios, creadores, desarrolladores, entusiastas de startups, diseñadores y más para lanzar ideas y formar equipos para desarrollar una startup durante el curso de un fin de semana. En el último día (domingo), los participantes lanzan su inicio a un panel de jueces que determina los ganadores.",
+      "DATE": "Septiembre 20-22",
+      "PLACE": "Lugar: Auditorio principal de la Sociedad de Ingenieros de Bolivia (SIB)"
     }
   }
 }
