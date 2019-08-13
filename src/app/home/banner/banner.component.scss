@@ -1,0 +1,45 @@
+@import '../../../styles.colors';
+@import '../../../styles.variables';
+
+.parallax-container {
+  height: 100vh;
+}
+
+#sw-isotype {
+  width: 180px;
+  height: auto;
+  max-width: 100%;
+}
+
+#sw-logotype {
+  width: 450px;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+#place-and-date {
+  padding: 15px;
+  border: 1px solid $secondary-color;
+  font-weight: bolder;
+  color: $secondary-color;
+
+  @media #{$medium-and-up} {
+    display: inline;
+  }
+}
+
+#slogan {
+  margin-top: 50px;
+  font-weight: bolder;
+  color: $secondary-color;
+
+  @media #{$medium-and-up} {
+    font-size: $h1-fontsize;
+  }
+}
+
+#sw-detail {
+  margin-bottom: 70px;
+  color: $secondary-color;
+}

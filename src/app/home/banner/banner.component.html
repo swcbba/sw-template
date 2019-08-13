@@ -1,0 +1,21 @@
+<div swTransparentNavbar class="parallax-container valign-wrapper">
+  <div class="parallax-container-data center-align">
+    <div class="container">
+      <div class="row">
+        <img id="sw-isotype" src="assets/images/banner/sww-illustration.png" [alt]="eventName"><br>
+        <img id="sw-logotype" class="hide-on-med-and-down" src="assets/images/banner/sww-logo-white.png"
+          [alt]="eventName"><br>
+        <h5 id="place-and-date">{{ 'HOME.BANNER.PLACE_AND_DATE' | translate }}</h5>
+        <h3 id="slogan">{{ 'HOME.BANNER.SLOGAN' | translate }}</h3>
+        <h5 id="sw-detail" class="hide-on-med-and-down">{{ 'HOME.BANNER.DETAIL' | translate }}
+          <b>{{ 'HOME.BANNER.REGISTER_NOW' | translate }}</b></h5>
+        <a class="btn btn-large" [href]="registrationFormUrl" target="_blank" rel="noopener noreferrer">
+          {{ 'HOME.BANNER.REGISTER' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+  <div swParallax class="parallax">
+    <img src="assets/images/banner/mainbg.png" [alt]="eventName">
+  </div>
+</div>
