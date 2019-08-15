@@ -13,7 +13,6 @@
 
 #sw-logotype {
   width: 450px;
-  height: auto;
   max-width: 100%;
   margin-bottom: 50px;
 }
@@ -35,11 +34,14 @@
   color: $secondary-color;
 
   @media #{$medium-and-up} {
-    font-size: $h1-fontsize;
+    font-size: $h4-fontsize;
   }
 }
 
 #sw-detail {
-  margin-bottom: 70px;
+  margin-bottom: 35px;
   color: $secondary-color;
+}
+#banner {
+  padding-top: 3%;
 }
