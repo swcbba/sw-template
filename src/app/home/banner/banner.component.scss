@@ -5,6 +5,10 @@
   height: 100vh;
 }
 
+#banner-container {
+  padding-top: 3%;
+}
+
 #sw-isotype {
   width: 180px;
   height: auto;
@@ -13,6 +17,7 @@
 
 #sw-logotype {
   width: 450px;
+  height: 70px;
   max-width: 100%;
   margin-bottom: 50px;
 }
@@ -29,7 +34,7 @@
 }
 
 #slogan {
-  margin-top: 50px;
+  margin: 30px 0px;
   font-weight: bolder;
   color: $secondary-color;
 
@@ -39,9 +44,6 @@
 }
 
 #sw-detail {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   color: $secondary-color;
-}
-#banner {
-  padding-top: 3%;
 }
