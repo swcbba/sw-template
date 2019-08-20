@@ -1,7 +1,10 @@
 <header>
   <nav class="transparent">
     <div class="nav-wrapper">
-      <a routerLink="/" class="brand-logo"><img id="sw-logotype" src="assets/images/sw-logo.svg" [alt]="eventName"></a>
+      <a routerLink="/" class="brand-logo">
+        <img id="sw-logotype" src="assets/images/sw-logo.svg" class="hide-on-large-only" [alt]="eventName">
+        <img id="sw-logotype" src="assets/images/sww-logo-white.svg" class="hide-on-med-and-down" [alt]="eventName">
+      </a>
       <a data-target="mobile-menu" class="sidenav-trigger">
         <i class="fas fa-bars"></i>
       </a>
