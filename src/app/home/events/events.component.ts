@@ -9,11 +9,11 @@ import { mockEvents } from '../../shared/constants/mocks';
   styleUrls: ['./events.component.scss']
 })
 export class EventsComponent implements OnInit {
-  events$: Event[];
+  events: Event[];
 
   constructor() {}
 
   ngOnInit(): void {
-    this.events$ = mockEvents;
+    this.events = mockEvents;
   }
 }

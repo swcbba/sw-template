@@ -1,3 +1,4 @@
+@import '../../../styles';
 @import '../../../styles.colors';
 @import '../../../styles.variables';
 
@@ -7,12 +8,6 @@
   max-width: 1280px;
   text-align: center;
   display: grid;
-}
-
-.text {
-  color: $input-background;
-  padding-top: 40px;
-  font-size: 25px;
 }
 
 .image-container {
