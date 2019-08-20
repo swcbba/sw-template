@@ -1,0 +1,27 @@
+<div class="container section center-align">
+  <div class="row center-align container">
+    <h3 class="section-title">{{ 'HOME.EVENT.EVENTS' | translate }}</h3>
+    <div class="container-cards center-align">
+      <div *ngFor="let event of events$" class="col s12 m4">
+        <div class="card">
+          <div class="column">
+            <div class="card-image image-item image-container">
+              <h1 class="text">{{ event.name }}</h1>
+              <img class="image" src="assets/images/sww-illustration-white.svg" [alt]="event.name">
+            </div>
+            <div class="card-content">
+              <img class="logo-sw" src="assets/images/logo-sw-color.svg" [alt]="event.name">
+              <p>{{ event.place }}</p>
+              <p>{{ event.date | date: 'mediumDate':'es' }}</p>
+              <div class="btn-large button waves-effect">
+                <a class="text-button" target="_blank">
+                  {{ 'HOME.BANNER.REGISTER' | translate }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

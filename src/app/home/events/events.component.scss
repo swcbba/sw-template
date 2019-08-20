@@ -1,0 +1,48 @@
+@import '../../../styles.colors';
+@import '../../../styles.variables';
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+  text-align: center;
+  display: grid;
+}
+
+.text {
+  color: $input-background;
+  padding-top: 40px;
+  font-size: 25px;
+}
+
+.image-container {
+  background: $tabs-text-color;
+}
+
+.logo-sw {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.image {
+  padding: 20px 60px 60px;
+}
+
+.card {
+  max-width: 345px;
+}
+
+.container-cards {
+  width: 100%;
+  justify-content: center;
+}
+
+.button {
+  color: $input-background;
+  margin-top: 10px;
+  background-color: $tabs-text-color;
+}
+
+.text-button {
+  color: $input-background;
+}

@@ -12,6 +12,7 @@ import { CountdownComponent } from './countdown/countdown.component';
 import { CountdownService } from './countdown/countdown.service';
 import { AboutComponent } from './about/about.component';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
+import { EventsComponent } from './events/events.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -24,7 +25,8 @@ describe('HomeComponent', () => {
         BannerComponent,
         CountdownComponent,
         AboutComponent,
-        TwoDigitsTransformPipe
+        TwoDigitsTransformPipe,
+        EventsComponent
       ],
       imports: [
         TranslateModule.forRoot({
