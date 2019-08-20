@@ -24,14 +24,11 @@ nav {
 
 #sw-logotype {
   object-fit: contain;
-  height: 60px;
+  height: 50px;
   padding-top: 3px;
-
-  @media #{$small-and-down} {
-    height: 50px;
-  }
 
   @media #{$medium-and-up} {
     padding: 7px 0px 0px 7%;
+    height: 57px;
   }
 }
