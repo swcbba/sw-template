@@ -1,12 +1,12 @@
 <div class="event-container section center-align">
-  <div class="row event-container">
+  <div class="row">
     <h3 class="section-title">{{ 'HOME.EVENT.EVENTS' | translate }}</h3>
     <div class="container-cards center-align">
       <div *ngFor="let event of events" class="col s12 m4">
         <div class="card">
           <div class="column">
             <div class="card-image image-item image-container">
-              <h1 class="title-event">{{ event.name }}</h1>
+              <h5 class="title-event">{{ event.name }}</h5>
               <img class="image" src="assets/images/sww-illustration-white.svg" [alt]="event.name">
             </div>
             <div class="card-content">
