@@ -26,7 +26,12 @@
       "TITLE": "What is Startup Weekend?",
       "DESCRIPTION": "is a global movement, a 54-hour weekend event that brings together innovators, entrepreneurs, creators, developers, startup enthusiasts, designers and more to launch ideas and form teams to develop a startup during the course of a weekend. On the last day (Sunday), participants give their final pitch at a panel of judges that determines the winners.",
       "DATE": "September 20-22",
-      "PLACE": "Place: Main auditorium of the Society of Engineers of Bolivia (SIB)"
+      "PLACE": "Place: Main auditorium of the Society of Engineers of Bolivia (SIB)",
+      "MORE_DETAILS": {
+        "TITLE": "Why \"Startup Weekend Women\"?",
+        "FIRST_PARAGRAPH": "We want to continue making efforts to cultivate a totally inclusive community. A key component of that vision is to empower women to pursue their dreams and build tools that change the world.",
+        "SECOND_PARAGRAPH": "We believe that by creating the right environments, programs and initiatives, women in technology (along with their larger community) are better positioned to drive transformative change in their community and beyond."
+      }
     }
   }
 }

@@ -10,6 +10,7 @@ import { BannerComponent } from './banner/banner.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { CountdownService } from './countdown/countdown.service';
 import { MetricsComponent } from './metrics/metrics.component';
+import { MoreDetailsComponent } from './about/more-details/more-details.component';
 import { PartnersComponent } from './partners/partners.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
@@ -23,6 +24,7 @@ import { TransparentNavbarModule } from '../shared/directives/transparent-navbar
     BannerComponent,
     CountdownComponent,
     MetricsComponent,
+    MoreDetailsComponent,
     PartnersComponent,
     ScrollSpyDirective,
     TwoDigitsTransformPipe

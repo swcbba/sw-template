@@ -11,6 +11,7 @@ import { BannerComponent } from './banner/banner.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { CountdownService } from './countdown/countdown.service';
 import { AboutComponent } from './about/about.component';
+import { MoreDetailsComponent } from './about/more-details/more-details.component';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 
 describe('HomeComponent', () => {
@@ -24,6 +25,7 @@ describe('HomeComponent', () => {
         BannerComponent,
         CountdownComponent,
         AboutComponent,
+        MoreDetailsComponent,
         TwoDigitsTransformPipe
       ],
       imports: [
