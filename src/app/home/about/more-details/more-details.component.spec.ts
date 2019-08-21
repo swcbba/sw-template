@@ -6,16 +6,15 @@ import {
   TranslateFakeLoader
 } from '@ngx-translate/core';
 
-import { AboutComponent } from './about.component';
-import { MoreDetailsComponent } from './more-details/more-details.component';
+import { MoreDetailsComponent } from './more-details.component';
 
-describe('AboutComponent', () => {
-  let component: AboutComponent;
-  let fixture: ComponentFixture<AboutComponent>;
+describe('MoreDetailsComponent', () => {
+  let component: MoreDetailsComponent;
+  let fixture: ComponentFixture<MoreDetailsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AboutComponent, MoreDetailsComponent],
+      declarations: [MoreDetailsComponent],
       imports: [
         TranslateModule.forRoot({
           loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
@@ -25,7 +24,7 @@ describe('AboutComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AboutComponent);
+    fixture = TestBed.createComponent(MoreDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
