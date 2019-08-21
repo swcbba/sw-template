@@ -16,6 +16,7 @@ import { ScrollSpyDirective } from './scroll-spy.directive';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 import { ParallaxModule } from '../shared/directives/parallax/parallax.module';
 import { TransparentNavbarModule } from '../shared/directives/transparent-navbar/transparent-navbar.module';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TransparentNavbarModule } from '../shared/directives/transparent-navbar
     MoreDetailsComponent,
     PartnersComponent,
     ScrollSpyDirective,
-    TwoDigitsTransformPipe
+    TwoDigitsTransformPipe,
+    EventsComponent
   ],
   imports: [
     CommonModule,

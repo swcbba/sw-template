@@ -32,6 +32,9 @@
         "FIRST_PARAGRAPH": "Queremos continuar los esfuerzos para cultivar una comunidad totalmente inclusiva. Un componente clave de esa visión es capacitar a las mujeres para que persigan sus sueños y construyan herramientas que cambien el mundo.",
         "SECOND_PARAGRAPH": "Creemos que al crear los entornos, programas e iniciativas correctos, las mujeres en tecnología (junto con su comunidad más grande) están mejor posicionadas para impulsar un cambio transformador en su comunidad y más allá."
       }
+    },
+    "EVENT": {
+      "EVENTS": "Eventos"
     }
   }
 }
