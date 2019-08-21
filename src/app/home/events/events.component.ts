@@ -11,8 +11,6 @@ import { mockEvents } from '../../shared/constants/mocks';
 export class EventsComponent implements OnInit {
   events: Event[];
 
-  constructor() {}
-
   ngOnInit(): void {
     this.events = mockEvents;
   }
