@@ -2,26 +2,31 @@
   <div class="row">
     <h3 class="section-title">{{ 'HOME.EVENT.EVENTS' | translate }}</h3>
     <div class="container-cards">
-      <div *ngFor="let event of events" class="col s12 m4">
-        <div class="card">
-          <div class="column">
-            <div class="card-image image-item image-container">
-              <h5 class="title-event">{{ event.name }}</h5>
-              <img class="image" src="assets/images/sww-illustration-white.svg" [alt]="event.name">
-            </div>
-            <div class="card-content">
-              <img class="logo-sw" src="assets/images/logo-sw-color.svg" [alt]="event.name">
-              <p>{{ event.place }}</p>
-              <p>{{ event.date | date: 'mediumDate':'es' }}</p>
-              <div class="btn-large button waves-effect">
-                <a class="text-button" target="_blank" rel="noopener noreferrer">
-                  {{ 'HOME.BANNER.REGISTER' | translate }}
-                </a>
+      <div *ngIf="events !== undefined && events.length > 0; else comingSoon">
+        <div *ngFor="let event of events" class="col s12 m4">
+          <div class="card">
+            <div class="column">
+              <div class="card-image image-item image-container">
+                <h5 class="title-event">{{ event.name }}</h5>
+                <img class="image" src="assets/images/sww-illustration-white.svg" [alt]="event.name">
+              </div>
+              <div class="card-content">
+                <img class="logo-sw" src="assets/images/logo-sw-color.svg" [alt]="event.name">
+                <p>{{ event.place }}</p>
+                <p>{{ event.date.toDate() | date: 'mediumDate':'es' }}</p>
+                <div class="btn-large button waves-effect">
+                  <a class="text-button" target="_blank" rel="noopener noreferrer">
+                    {{ 'HOME.BANNER.REGISTER' | translate }}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <ng-template #comingSoon>
+        <h2>{{ 'HOME.EVENT.COMING_SOON' | translate }}</h2>
+      </ng-template>
     </div>
   </div>
 </div>

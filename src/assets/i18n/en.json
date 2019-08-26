@@ -34,7 +34,8 @@
       }
     },
     "EVENT": {
-      "EVENTS": "Events"
+      "EVENTS": "Events",
+      "COMING_SOON": "Coming Soon"
     }
   }
 }
