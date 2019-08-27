@@ -9,6 +9,7 @@ import { of } from 'rxjs';
 
 import { PartnerService } from './partner.service';
 import { PartnersComponent } from './partners.component';
+
 const partnerServiceMock = {
   getAll: () => of([])
 };

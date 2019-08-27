@@ -1,16 +1,15 @@
-
-<div class="container section-space">
-    <h3 class="section-title center-align">{{ 'HOME.PARTNERS.TITLE' | translate}}</h3>
-    <div *ngFor="let partner of partners$ | async">
-      <h5 class="left-align section-title">{{ partner.category }}</h5>
-      <div class="row">
-        <div class="col s12 m4 l4 xl3 center-align sw-partner-content" *ngFor="let item of partner.items">
-          <a [href]="item.website"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img class="sw-partner" [src]="item.logoUrl" [alt]="item.name">
-          </a>
-        </div>
+<div class="container section">
+  <h3 class="section-title center-align">{{ 'HOME.PARTNERS.TITLE' | translate}}</h3>
+  <div *ngFor="let partner of partners$ | async">
+    <h5 class="left-align section-title">{{ partner.category }}</h5>
+    <div class="row">
+      <div class="col s12 m4 l4 xl3 center-align sw-partner-content" *ngFor="let item of partner.items">
+        <a [href]="item.website"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img class="sw-partner" [src]="item.logoUrl" [alt]="item.name">
+        </a>
       </div>
     </div>
+  </div>
 </div>

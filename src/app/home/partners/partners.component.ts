@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { Observable } from 'rxjs';
 
-import { Partner } from '../../shared/models/partner.model';
 import { PartnerService } from './partner.service';
+import { Partner } from '../../shared/models/partner.model';
 
 @Component({
   selector: 'sw-partners',
@@ -13,10 +13,9 @@ import { PartnerService } from './partner.service';
 export class PartnersComponent implements OnInit {
   partners$: Observable<Partner[]>;
 
-  constructor(private partnerService: PartnerService) { }
+  constructor(private partnerService: PartnerService) {}
 
   ngOnInit() {
     this.partners$ = this.partnerService.getAll();
   }
-
 }
