@@ -35,6 +35,9 @@
     },
     "EVENT": {
       "EVENTS": "Events"
+    },
+    "PARTNERS": {
+      "TITLE": "Partners"
     }
   }
 }
