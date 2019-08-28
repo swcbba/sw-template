@@ -7,34 +7,34 @@ import {
 } from '@ngx-translate/core';
 import { of } from 'rxjs';
 
-import { PartnerService } from './partner.service';
-import { PartnersComponent } from './partners.component';
+import { EventsComponent } from './events.component';
+import { EventService } from './event.service';
 
-const partnerServiceMock = {
+const EventsServiceMock = {
   getAll: () => of([])
 };
 
-describe('PartnersComponent', () => {
-  let component: PartnersComponent;
-  let fixture: ComponentFixture<PartnersComponent>;
+describe('EventsComponent', () => {
+  let component: EventsComponent;
+  let fixture: ComponentFixture<EventsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PartnersComponent ],
+      declarations: [ EventsComponent ],
       imports: [
         TranslateModule.forRoot({
           loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
         })
       ],
       providers: [
-        { provide: PartnerService, useValue: partnerServiceMock }
+        { provide: EventService, useValue: EventsServiceMock }
       ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PartnersComponent);
+    fixture = TestBed.createComponent(EventsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

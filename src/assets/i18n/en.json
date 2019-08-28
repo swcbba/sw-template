@@ -32,6 +32,13 @@
         "FIRST_PARAGRAPH": "We want to continue making efforts to cultivate a totally inclusive community. A key component of that vision is to empower women to pursue their dreams and build tools that change the world.",
         "SECOND_PARAGRAPH": "We believe that by creating the right environments, programs and initiatives, women in technology (along with their larger community) are better positioned to drive transformative change in their community and beyond."
       }
+    },
+    "EVENT": {
+      "TITLE": "Events",
+      "COMING_SOON": "Coming Soon"
+    },
+    "PARTNERS": {
+      "TITLE": "Supporting Us"
     }
   }
 }

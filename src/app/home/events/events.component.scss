@@ -1,0 +1,41 @@
+@import '../../../styles.colors';
+@import '../../../styles.variables';
+
+.image-container {
+  background: $tabs-text-color;
+}
+
+.logo-sw {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.image {
+  padding: 20px 60px 60px;
+}
+
+.card {
+  max-width: 345px;
+}
+
+.container-cards {
+  width: 100%;
+  justify-content: center;
+}
+
+.button {
+  color: $input-background;
+  margin-top: 10px;
+  background-color: $tabs-text-color;
+  width: 100%;
+}
+
+.text-button {
+  color: $input-background;
+}
+
+.title-event {
+  color: $input-background;
+  padding-top: 40px;
+}
