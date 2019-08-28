@@ -5,15 +5,21 @@ import {
   TranslateLoader,
   TranslateFakeLoader
 } from '@ngx-translate/core';
+import { of } from 'rxjs';
 
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { CountdownService } from './countdown/countdown.service';
+import { EventService } from './events/event.service';
 import { AboutComponent } from './about/about.component';
 import { MoreDetailsComponent } from './about/more-details/more-details.component';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 import { EventsComponent } from './events/events.component';
+
+const angularFirestoreMock = {
+  getAll: () => of([])
+};
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -35,7 +41,10 @@ describe('HomeComponent', () => {
           loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
         })
       ],
-      providers: [CountdownService]
+      providers: [
+        CountdownService,
+        { provide: EventService, useValue: angularFirestoreMock }
+      ]
     }).compileComponents();
   }));
 

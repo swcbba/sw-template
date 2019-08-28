@@ -5,8 +5,14 @@ import {
   TranslateLoader,
   TranslateModule
 } from '@ngx-translate/core';
+import { of } from 'rxjs';
 
 import { EventsComponent } from './events.component';
+import { EventService } from './event.service';
+
+const EventsServiceMock = {
+  getAll: () => of([])
+};
 
 describe('EventsComponent', () => {
   let component: EventsComponent;
@@ -19,6 +25,9 @@ describe('EventsComponent', () => {
         TranslateModule.forRoot({
           loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
         })
+      ],
+      providers: [
+        { provide: EventService, useValue: EventsServiceMock }
       ]
     })
     .compileComponents();
