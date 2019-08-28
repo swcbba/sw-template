@@ -36,6 +36,9 @@
     "EVENT": {
       "TITLE": "Eventos",
       "COMING_SOON": "Próximamente"
+    },
+    "PARTNERS": {
+      "TITLE": "Nos Apoyan"
     }
   }
 }

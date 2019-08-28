@@ -16,6 +16,12 @@ import { AboutComponent } from './about/about.component';
 import { MoreDetailsComponent } from './about/more-details/more-details.component';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 import { EventsComponent } from './events/events.component';
+import { PartnersComponent } from './partners/partners.component';
+import { PartnerService } from './partners/partner.service';
+
+const partnerServiceMock = {
+  getAll: () => of([])
+};
 
 const angularFirestoreMock = {
   getAll: () => of([])
@@ -34,7 +40,8 @@ describe('HomeComponent', () => {
         AboutComponent,
         MoreDetailsComponent,
         TwoDigitsTransformPipe,
-        EventsComponent
+        EventsComponent,
+        PartnersComponent
       ],
       imports: [
         TranslateModule.forRoot({
@@ -43,7 +50,8 @@ describe('HomeComponent', () => {
       ],
       providers: [
         CountdownService,
-        { provide: EventService, useValue: angularFirestoreMock }
+        { provide: EventService, useValue: angularFirestoreMock },
+        { provide: PartnerService, useValue: partnerServiceMock }
       ]
     }).compileComponents();
   }));

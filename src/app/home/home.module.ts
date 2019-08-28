@@ -18,6 +18,7 @@ import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 import { ParallaxModule } from '../shared/directives/parallax/parallax.module';
 import { TransparentNavbarModule } from '../shared/directives/transparent-navbar/transparent-navbar.module';
 import { EventsComponent } from './events/events.component';
+import { PartnerService } from './partners/partner.service';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,6 @@ import { EventsComponent } from './events/events.component';
     ParallaxModule,
     TransparentNavbarModule
   ],
-  providers: [CountdownService, EventService]
+  providers: [CountdownService, EventService, PartnerService]
 })
 export class HomeModule {}
