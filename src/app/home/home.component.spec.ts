@@ -19,10 +19,6 @@ import { EventsComponent } from './events/events.component';
 import { PartnersComponent } from './partners/partners.component';
 import { PartnerService } from './partners/partner.service';
 
-const partnerServiceMock = {
-  getAll: () => of([])
-};
-
 const angularFirestoreMock = {
   getAll: () => of([])
 };
@@ -51,7 +47,7 @@ describe('HomeComponent', () => {
       providers: [
         CountdownService,
         { provide: EventService, useValue: angularFirestoreMock },
-        { provide: PartnerService, useValue: partnerServiceMock }
+        { provide: PartnerService, useValue: angularFirestoreMock }
       ]
     }).compileComponents();
   }));

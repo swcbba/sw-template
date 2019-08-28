@@ -15,10 +15,10 @@ import { MoreDetailsComponent } from './about/more-details/more-details.componen
 import { PartnersComponent } from './partners/partners.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
-import { ParallaxModule } from '../shared/directives/parallax/parallax.module';
-import { TransparentNavbarModule } from '../shared/directives/transparent-navbar/transparent-navbar.module';
 import { EventsComponent } from './events/events.component';
 import { PartnerService } from './partners/partner.service';
+import { ParallaxModule } from '../shared/directives/parallax/parallax.module';
+import { TransparentNavbarModule } from '../shared/directives/transparent-navbar/transparent-navbar.module';
 
 @NgModule({
   declarations: [

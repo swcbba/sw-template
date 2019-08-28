@@ -1,5 +1,5 @@
 <div class="container section center-align">
-  <ng-container *ngIf="!countdownService.eventAlreadyStarted">
+  <ng-container *ngIf="!countdownService.eventAlreadyStarted; else eventStarted">
     <ng-container *ngIf="(countdownService.timeRemaining$ | async) as timeRemaining">
       <h3 class="section-title">
         {{ 'HOME.COUNTDOWN.TITLE' | translate }}
@@ -63,9 +63,9 @@
       </div>
     </ng-container>
   </ng-container>
-  <ng-container *ngIf="countdownService.eventAlreadyStarted">
+  <ng-template #eventStarted>
     <h3>
       {{ 'HOME.COUNTDOWN.ALREADY_STARTED' | translate }}
     </h3>
-  </ng-container>
+  </ng-template>
 </div>
