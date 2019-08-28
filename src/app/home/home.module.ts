@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { BannerComponent } from './banner/banner.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { CountdownService } from './countdown/countdown.service';
+import { EventService } from './events/event.service';
 import { MetricsComponent } from './metrics/metrics.component';
 import { MoreDetailsComponent } from './about/more-details/more-details.component';
 import { PartnersComponent } from './partners/partners.component';
@@ -39,6 +40,6 @@ import { PartnerService } from './partners/partner.service';
     ParallaxModule,
     TransparentNavbarModule
   ],
-  providers: [CountdownService, PartnerService]
+  providers: [CountdownService, EventService, PartnerService]
 })
 export class HomeModule {}

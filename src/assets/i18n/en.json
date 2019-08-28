@@ -34,7 +34,8 @@
       }
     },
     "EVENT": {
-      "EVENTS": "Events"
+      "TITLE": "Events",
+      "COMING_SOON": "Coming Soon"
     },
     "PARTNERS": {
       "TITLE": "Supporting Us"
