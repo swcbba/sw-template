@@ -3,7 +3,7 @@
     <h3 class="section-title">{{ 'HOME.EVENT.TITLE' | translate }}</h3>
     <div class="container-cards">
       <ng-container *ngIf="(events$ | async) as events">
-        <div *ngIf="events !== undefined && events.length > 0; else comingSoon">
+        <div *ngIf="events.length > 0; else comingSoon">
           <div *ngFor="let event of events" class="col s12 m4">
             <div class="card">
               <div class="column">
@@ -12,7 +12,7 @@
                   <img class="image" [src]="event.logoUrl" [alt]="event.name">
                 </div>
                 <div class="card-content">
-                  <img class="logo-sw" src="assets/images/logo-sw-color.svg" [alt]="event.name">
+                  <img class="logo-sw" [src]="event.bannerUrl" [alt]="event.name">
                   <p>{{ event.place }}</p>
                   <p>{{ event.date.toDate() | date: 'mediumDate':'es' }}</p>
                   <div class="btn-large button waves-effect">

@@ -7,5 +7,6 @@ export interface Event extends DataType {
   link: string;
   place: string;
   logoUrl: string;
+  bannerUrl: string;
   date: firestore.Timestamp;
 }
