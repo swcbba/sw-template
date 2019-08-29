@@ -39,6 +39,9 @@
     },
     "PARTNERS": {
       "TITLE": "Nos Apoyan"
+    },
+    "SPONSOR": {
+      "BECOME_SPONSOR": "Patrocinar"
     }
   }
 }

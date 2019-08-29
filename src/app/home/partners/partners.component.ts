@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 
 import { PartnerService } from './partner.service';
 import { Partner } from '../../shared/models/partner.model';
+import { BRIEF_URL } from '../../shared/constants/event-data.constant';
 
 @Component({
   selector: 'sw-partners',
@@ -12,6 +13,7 @@ import { Partner } from '../../shared/models/partner.model';
 })
 export class PartnersComponent implements OnInit {
   partners$: Observable<Partner[]>;
+  briefUrl = BRIEF_URL;
 
   constructor(private partnerService: PartnerService) {}
 
