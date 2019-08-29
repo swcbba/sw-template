@@ -5,8 +5,8 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { ScheduleRoutingModule } from './schedule-routing.module';
 import { ScheduleComponent } from './schedule.component';
+import { ScheduleService } from './schedule.service';
 import { CollapsibleModule } from '../shared/directives/collapsible/collapsible.module';
-
 
 @NgModule({
   declarations: [ScheduleComponent],
@@ -15,6 +15,7 @@ import { CollapsibleModule } from '../shared/directives/collapsible/collapsible.
     ScheduleRoutingModule,
     TranslateModule,
     CollapsibleModule
-  ]
+  ],
+  providers: [ScheduleService]
 })
-export class ScheduleModule { }
+export class ScheduleModule {}

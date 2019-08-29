@@ -1,14 +1,23 @@
-
-<div class="container section center-align">
+<div class="container section">
   <div class="row">
-    <h3 class="section-title">{{ 'SCHEDULE.TITLE' | translate }}</h3>
+    <h3 class="section-title center-align">{{ 'SCHEDULE.TITLE' | translate }}</h3>
     <ul swCollapsible class="collapsible popout">
-      <li class="active">
-        <div class="collapsible-header">
-          <h6><i class="fa fa-bus" aria-hidden="true"></i>DATE</h6>
+      <li *ngFor="let schedule of schedule$ | async">
+        <div class="collapsible-header separator">
+          <h6><i class="fas fa-calendar-alt primary-color"
+              aria-hidden="true"></i>{{ schedule.date.toDate() | date: 'mediumDate':'es' }}</h6>
         </div>
         <div class="collapsible-body">
-          SOME TEXT
+          <ul class="collection">
+            <li class="collection-item" *ngFor="let item of schedule.items">
+              <div class="row">
+                <div class="col m2 s12 "><i class="bolder">{{ item.hour }}</i></div>
+                <div class="col m3 s12">{{ languageService.currentLanguage === 'es' ? item.actionEs : item.En }}</div>
+                <div class="col m7 s12">
+                  {{ languageService.currentLanguage === 'es' ? item.descriptionEs : item.descriptionEn }}</div>
+              </div>
+            </li>
+          </ul>
         </div>
       </li>
     </ul>
