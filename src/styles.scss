@@ -1,8 +1,11 @@
 @import './styles.colors';
 @import './styles.variables';
 @import '~materialize-css/sass/materialize';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 
 body {
   font-family: 'Montserrat', sans-serif;

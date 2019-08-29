@@ -33,6 +33,18 @@
         "SECOND_PARAGRAPH": "We believe that by creating the right environments, programs and initiatives, women in technology (along with their larger community) are better positioned to drive transformative change in their community and beyond."
       }
     },
+    "REGISTER": {
+      "TITLE": "Register",
+      "PAYMENT_METHOD": {
+        "TITLE": "Choose a payment method"
+      },
+      "INFO": {
+        "TITLE": "Register your info"
+      },
+      "THANKS": {
+        "TITLE": "See you at the event!"
+      }
+    },
     "EVENT": {
       "TITLE": "Events",
       "COMING_SOON": "Coming Soon"

@@ -33,6 +33,18 @@
         "SECOND_PARAGRAPH": "Creemos que al crear los entornos, programas e iniciativas correctos, las mujeres en tecnología (junto con su comunidad más grande) están mejor posicionadas para impulsar un cambio transformador en su comunidad y más allá."
       }
     },
+    "REGISTER": {
+      "TITLE": "Regístrate",
+      "PAYMENT_METHOD": {
+        "TITLE": "Escoge un método de pago"
+      },
+      "INFO": {
+        "TITLE": "Registra tus datos"
+      },
+      "THANKS": {
+        "TITLE": "¡Nos vemos en el evento!"
+      }
+    },
     "EVENT": {
       "TITLE": "Eventos",
       "COMING_SOON": "Próximamente"

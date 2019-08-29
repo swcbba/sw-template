@@ -1,0 +1,41 @@
+<div class="container section">
+  <h3 class="center-align section-title">
+    {{ 'HOME.REGISTER.TITLE' | translate }}
+  </h3>
+  <div class="hide-on-med-and-up">
+    <mat-vertical-stepper linear="false">
+      <mat-step [label]="'HOME.REGISTER.PAYMENT_METHOD.TITLE' | translate">
+        <sw-choose-payment-method></sw-choose-payment-method>
+        <div>
+          <button class="btn waves-effect waves-light" matStepperNext>Next</button>
+        </div>
+      </mat-step>
+      <mat-step [label]="'HOME.REGISTER.INFO.TITLE' | translate">
+        <sw-register-your-info></sw-register-your-info>
+      </mat-step>
+      <mat-step [label]="'HOME.REGISTER.THANKS.TITLE' | translate">
+        <sw-thanks></sw-thanks>
+      </mat-step>
+    </mat-vertical-stepper>
+  </div>
+  <div class="hide-on-small-only">
+    <mat-horizontal-stepper linear="false">
+      <mat-step [label]="'HOME.REGISTER.PAYMENT_METHOD.TITLE' | translate">
+        <sw-choose-payment-method></sw-choose-payment-method>
+        <div>
+          <button class="btn waves-effect waves-light" matStepperNext>Next</button>
+        </div>
+      </mat-step>
+      <mat-step [label]="'HOME.REGISTER.INFO.TITLE' | translate">
+        <sw-register-your-info></sw-register-your-info>
+        <div>
+          <button class="btn waves-effect waves-light" matStepperPrevious>Back</button>
+          <button class="btn waves-effect waves-light" matStepperNext>Next</button>
+        </div>
+      </mat-step>
+      <mat-step [label]="'HOME.REGISTER.THANKS.TITLE' | translate">
+        <sw-thanks></sw-thanks>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </div>
+</div>
