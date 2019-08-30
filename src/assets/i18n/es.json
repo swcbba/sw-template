@@ -59,6 +59,10 @@
       "THANKS": {
         "TITLE": "¡Nos vemos en el evento!",
         "FIRST_PARAGRAPH": "¡Gracias por adquirir tu entrada! ¡No podemos esperar por ver las cosas increíbles que harás! ¡Nos vemos en el evento!"
+      },
+      "BUTTONS": {
+        "NEXT": "Siguiente",
+        "BACK": "Atrás"
       }
     },
     "EVENT": {

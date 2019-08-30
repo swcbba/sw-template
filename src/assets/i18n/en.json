@@ -59,6 +59,10 @@
       "THANKS": {
         "TITLE": "See you at the event!",
         "FIRST_PARAGRAPH": "Thanks for acquiring your ticket! We can't wait to see the amazing things you are going to do! See you at the event!"
+      },
+      "BUTTONS": {
+        "NEXT": "Next",
+        "BACK": "Back"
       }
     },
     "EVENT": {

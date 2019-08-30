@@ -39,6 +39,12 @@ p {
   font-weight: bold !important;
 }
 
+.secondary-btn, .secondary-btn:hover {
+  color: $secondary-color !important;
+  font-weight: bold !important;
+  background-color: $primary-color;
+}
+
 .top-section {
   position: relative;
   z-index: 997;
