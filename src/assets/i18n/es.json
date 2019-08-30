@@ -4,7 +4,8 @@
     "ABOUT": "Acerca de",
     "EVENTS": "Eventos",
     "PARTNERS": "Patrocinadores",
-    "REGISTER": "Inscríbete"
+    "REGISTER": "Inscríbete",
+    "SCHEDULE": "Cronograma"
   },
   "HOME": {
     "BANNER": {
@@ -43,5 +44,8 @@
     "SPONSOR": {
       "BECOME_SPONSOR": "Patrocinar"
     }
+  },
+  "SCHEDULE": {
+    "TITLE": "Cronograma del evento"
   }
 }
