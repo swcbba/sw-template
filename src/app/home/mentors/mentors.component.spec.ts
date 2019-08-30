@@ -7,11 +7,12 @@ import {
 } from '@ngx-translate/core';
 import {of} from 'rxjs';
 
-import { MentorsComponent } from './mentors.component';
+import { LanguageService } from '../../core/services/language.service';
 import { MentorService } from './mentor.service';
+import { MentorsComponent } from './mentors.component';
 
 const MentorsServiceMock = {
-  getAll: () => of([])
+  getAllSorted: () => of([])
 };
 
 describe('MentorsComponent', () => {
@@ -27,7 +28,7 @@ describe('MentorsComponent', () => {
         })
       ],
       providers: [
-        { provide: MentorService, useValue: MentorsServiceMock}
+        { provide: MentorService, useValue: MentorsServiceMock}, LanguageService
       ]
     })
     .compileComponents();

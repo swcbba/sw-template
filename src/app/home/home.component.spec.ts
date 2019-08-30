@@ -12,6 +12,7 @@ import { of } from 'rxjs';
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
 import { CountdownComponent } from './countdown/countdown.component';
+import { LanguageService } from '../core/services/language.service';
 import { CountdownService } from './countdown/countdown.service';
 import { EventService } from './events/event.service';
 import { PartnerService } from './partners/partner.service';
@@ -29,6 +30,10 @@ import { MentorsComponent } from './mentors/mentors.component';
 
 const angularFirestoreMock = {
   getAll: () => of([])
+};
+
+const mentorsServiceMock = {
+  getAllSorted: () => of([])
 };
 
 describe('HomeComponent', () => {
@@ -63,7 +68,8 @@ describe('HomeComponent', () => {
         CountdownService,
         { provide: EventService, useValue: angularFirestoreMock },
         { provide: PartnerService, useValue: angularFirestoreMock },
-        { provide: MentorService, useValue: angularFirestoreMock }
+        { provide: MentorService, useValue: mentorsServiceMock },
+        LanguageService
       ]
     }).compileComponents();
   }));

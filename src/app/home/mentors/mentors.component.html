@@ -7,18 +7,20 @@
           <div class="card">
             <img class="circle photo-url" [src]="mentor.photoUrl" [alt]="mentor.name">
             <div class="card-content">
+              <h6>{{ languageService.currentLanguage === 'es' ? mentor.roleSp : mentor.roleEn }}</h6>
               <span class="card-title activator grey-text text-darken-4">
                 {{ mentor.name }}
                 <i class="fas fa-angle-up right"></i>
               </span>
               <h6>{{ mentor.placeOfBirth }}</h6>
             </div>
-            <div class="card-reveal">
-                <span class="card-title">
-                  <i class="fas fa-angle-down right"></i>
-                </span>
-              <p>{{ mentor.detail }}</p>
-            </div>
+<!--            TODO: Enable when we have bios-->
+<!--            <div class="card-reveal">-->
+<!--                <span class="card-title">-->
+<!--                  <i class="fas fa-angle-down right"></i>-->
+<!--                </span>-->
+<!--              <p>{{ mentor.biography }}</p>-->
+<!--            </div>-->
           </div>
         </div>
       </div>
