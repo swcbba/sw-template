@@ -12,7 +12,7 @@
             <li class="collection-item" *ngFor="let item of schedule.items">
               <div class="row">
                 <div class="col m2 s12 "><i class="bolder">{{ item.hour }}</i></div>
-                <div class="col m3 s12">{{ languageService.currentLanguage === 'es' ? item.actionEs : item.En }}</div>
+                <div class="col m3 s12">{{ languageService.currentLanguage === 'es' ? item.actionEs : item.actionEn }}</div>
                 <div class="col m7 s12">
                   {{ languageService.currentLanguage === 'es' ? item.descriptionEs : item.descriptionEn }}</div>
               </div>
