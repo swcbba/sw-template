@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ScheduleComponent } from './schedule.component';
 
-
 const routes: Routes = [
   {
     path: '',
