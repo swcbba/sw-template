@@ -1,0 +1,30 @@
+<div class="container section center-align">
+  <div class="row">
+    <h3 class="section-title">{{ 'HOME.MENTORS.TITLE' | translate }}</h3>
+    <ng-container *ngIf="(mentors$ | async) as mentors">
+      <div *ngIf="mentors.length > 0; else comingSoon">
+        <div *ngFor="let mentor of mentors" class="col s12 m4">
+          <div class="card">
+            <img class="circle photo-url" [src]="mentor.photoUrl" [alt]="mentor.name">
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                {{ mentor.name }}
+                <i class="fas fa-angle-up right"></i>
+              </span>
+              <h6>{{ mentor.placeOfBirth }}</h6>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title">
+                  <i class="fas fa-angle-down right"></i>
+                </span>
+              <p>{{ mentor.detail }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+    <ng-template #comingSoon>
+      <h5>{{ 'HOME.MENTORS.COMING_SOON' | translate }}</h5>
+    </ng-template>
+  </div>
+</div>

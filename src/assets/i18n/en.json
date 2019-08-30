@@ -4,7 +4,8 @@
     "ABOUT": "About",
     "EVENTS": "Events",
     "PARTNERS": "Partners",
-    "REGISTER": "Register"
+    "REGISTER": "Register",
+    "MENTORS": "Mentors"
   },
   "HOME": {
     "BANNER": {
@@ -39,6 +40,10 @@
     },
     "PARTNERS": {
       "TITLE": "Supporting Us"
+    },
+    "MENTORS": {
+      "TITLE": "Mentors",
+      "COMING_SOON": "Coming Soon"
     }
   }
 }

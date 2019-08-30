@@ -10,6 +10,7 @@ import { BannerComponent } from './banner/banner.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { CountdownService } from './countdown/countdown.service';
 import { EventService } from './events/event.service';
+import { MentorService } from './mentors/mentor.service';
 import { MetricsComponent } from './metrics/metrics.component';
 import { MoreDetailsComponent } from './about/more-details/more-details.component';
 import { PartnersComponent } from './partners/partners.component';
@@ -19,6 +20,7 @@ import { EventsComponent } from './events/events.component';
 import { PartnerService } from './partners/partner.service';
 import { ParallaxModule } from '../shared/directives/parallax/parallax.module';
 import { TransparentNavbarModule } from '../shared/directives/transparent-navbar/transparent-navbar.module';
+import { MentorsComponent } from './mentors/mentors.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { TransparentNavbarModule } from '../shared/directives/transparent-navbar
     PartnersComponent,
     ScrollSpyDirective,
     TwoDigitsTransformPipe,
-    EventsComponent
+    EventsComponent,
+    MentorsComponent
   ],
   imports: [
     CommonModule,
@@ -40,6 +43,6 @@ import { TransparentNavbarModule } from '../shared/directives/transparent-navbar
     ParallaxModule,
     TransparentNavbarModule
   ],
-  providers: [CountdownService, EventService, PartnerService]
+  providers: [CountdownService, EventService, PartnerService, MentorService]
 })
 export class HomeModule {}
