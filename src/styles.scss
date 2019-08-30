@@ -13,7 +13,7 @@ $custom-typography: mat-typography-config(
 @include mat-core($custom-typography);
 
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Montserrat', sans-serif;
 }
 
 sw-root {

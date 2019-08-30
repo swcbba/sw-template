@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 
-import {
-  EVENT_NAME,
-  REGISTRATION_FORM_URL
-} from '../../shared/constants/event-data.constant';
+import { EVENT_NAME } from '../../shared/constants/event-data.constant';
 
 @Component({
   selector: 'sw-navbar',
@@ -12,5 +9,4 @@ import {
 })
 export class NavbarComponent {
   eventName = EVENT_NAME;
-  registrationFormURL = REGISTRATION_FORM_URL;
 }
