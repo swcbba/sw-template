@@ -2,7 +2,7 @@
   <div class="row">
     <h3 class="section-title">{{ 'HOME.EVENT.TITLE' | translate }}</h3>
     <div class="container-cards">
-      <ng-container *ngIf="(events$ | async) as events">
+      <ng-container *ngIf="(events$ | async) as events; else comingSoon">
         <div *ngIf="events.length > 0; else comingSoon">
           <div *ngFor="let event of events" class="col s12 m4">
             <div class="card">

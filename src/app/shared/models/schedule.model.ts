@@ -1,7 +1,9 @@
+import { firestore } from 'firebase';
+
 import { DataType } from './data-type.model';
 
 export interface Schedule extends DataType {
-  date: Date;
+  date: firestore.Timestamp;
   items: ScheduleItem[];
 }
 
