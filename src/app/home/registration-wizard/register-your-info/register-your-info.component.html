@@ -1,1 +1,20 @@
-<p>register-your-info works!</p>
+<p>
+  {{ 'HOME.REGISTER.INFO.FIRST_PARAGRAPH' | translate }}
+</p>
+<p>
+  {{ 'HOME.REGISTER.INFO.SECOND_PARAGRAPH' | translate }}
+</p>
+<p>
+  {{ 'HOME.REGISTER.INFO.THIRD_PARAGRAPH' | translate }}
+</p>
+<div class="center-align">
+  <a class="btn btn-large waves-effect waves-light" [href]="registrationFormUrl" target="_blank"
+    rel="noopener noreferrer">
+    {{ 'HOME.REGISTER.INFO.FILL_FORM' | translate }}
+  </a>
+</div>
+<br>
+<div class="center-align">
+  <img class="fill-form-img" src="assets/images/registration/fill-form.jpg"
+    [alt]="'HOME.REGISTER.INFO.TITLE' | translate">
+</div>

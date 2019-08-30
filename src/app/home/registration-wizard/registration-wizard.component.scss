@@ -1,0 +1,17 @@
+@import '../../../styles.colors';
+
+:host mat-horizontal-stepper::ng-deep,
+:host mat-vertical-stepper::ng-deep {
+  .mat-step-icon-selected,
+  .mat-step-icon-state-edit {
+    background-color: $primary-color;
+  }
+}
+
+::ng-deep li {
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin-left: 10px;
+}

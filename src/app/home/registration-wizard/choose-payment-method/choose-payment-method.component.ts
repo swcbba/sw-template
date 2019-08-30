@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'sw-choose-payment-method',
   templateUrl: './choose-payment-method.component.html',
   styleUrls: ['./choose-payment-method.component.scss']
 })
-export class ChoosePaymentMethodComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class ChoosePaymentMethodComponent {
+  simpleQRCodePath = 'assets/images/registration/early-bird.png';
 }

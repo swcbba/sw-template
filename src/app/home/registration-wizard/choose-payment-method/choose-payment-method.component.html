@@ -1,14 +1,28 @@
-<h5 class="center-align">
-  You can pay using one of the following payment methods:
-</h5>
+<p>
+  {{ 'HOME.REGISTER.PAYMENT_METHOD.SUBTITLE' | translate }}
+</p>
+<p>
+  {{ 'HOME.REGISTER.PAYMENT_METHOD.BANK_DEPOSIT' | translate }}
+</p>
 <ul>
   <li>
-    <p>You can make the payment in one of the following places: ...</p>
+    {{ 'HOME.REGISTER.PAYMENT_METHOD.ACCOUNT_ONE' | translate }}
   </li>
   <li>
-    <p>You can make the payment with a bank deposit in these accounts: ...</p>
-  </li>
-  <li>
-    <p>You can make the payment using the "Simple" QR Code: ...</p>
+    {{ 'HOME.REGISTER.PAYMENT_METHOD.ACCOUNT_TWO' | translate }}
   </li>
 </ul>
+<p>
+  {{ 'HOME.REGISTER.PAYMENT_METHOD.POINTS_OF_SALE' | translate }}
+</p>
+<ul>
+  <li>
+    {{ 'HOME.REGISTER.PAYMENT_METHOD.POS_ONE' | translate }}
+  </li>
+</ul>
+<p>
+  {{ 'HOME.REGISTER.PAYMENT_METHOD.QR_CODE' | translate }}
+</p>
+<div class="center-align">
+  <img class="simple-code-img" [src]="simpleQRCodePath" [alt]="'HOME.REGISTER.PAYMENT_METHOD.QR_CODE' | translate">
+</div>
