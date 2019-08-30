@@ -4,7 +4,8 @@
     "ABOUT": "Acerca de",
     "EVENTS": "Eventos",
     "PARTNERS": "Patrocinadores",
-    "REGISTER": "Inscríbete"
+    "REGISTER": "Inscríbete",
+    "SCHEDULE": "Cronograma"
   },
   "HOME": {
     "BANNER": {
@@ -33,12 +34,49 @@
         "SECOND_PARAGRAPH": "Creemos que al crear los entornos, programas e iniciativas correctos, las mujeres en tecnología (junto con su comunidad más grande) están mejor posicionadas para impulsar un cambio transformador en su comunidad y más allá."
       }
     },
+    "REGISTER": {
+      "TITLE": "Regístrate",
+      "PRICE_TITLE": "El precio de la entrada es:",
+      "EARLY_BIRD": "Bs. 179 en Early Bird (hasta el 31 de Agosto, 2019)",
+      "REGULAR_PRICE": "Bs. 249 en Precio Regular (del 1 al 20 de Septiembre, 2019)",
+      "PAYMENT_METHOD": {
+        "TITLE": "Escoge un método de pago",
+        "SUBTITLE": "Puedes pagar usando uno de los siguientes métodos:",
+        "BANK_DEPOSIT": "Depósito bancario a uno de los siguientes números de cuenta:",
+        "ACCOUNT_ONE": "Banco Unión de Bolivia - 10000029456965, Iris Elizabeth Alemán Quispe (CI: 5300342)",
+        "ACCOUNT_TWO": "Banco Nacional de Bolivia (BNB) - 3502039716, Adriana Huayra Gómez Peredo (CI: 6466565)",
+        "POINTS_OF_SALE": "Realizar el pago en uno de nuestros puntos físicos:",
+        "POS_ONE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "QR_CODE": "Escanear nuestro código QR:"
+      },
+      "INFO": {
+        "TITLE": "Registra tus datos",
+        "FIRST_PARAGRAPH": "Necesitamos tus datos y una imagen con tu comprobante de pago.",
+        "SECOND_PARAGRAPH": "Llena el siguiente formulario. Cuéntanos quién eres, qué es lo que haces, qué esperas del evento.",
+        "THIRD_PARAGRAPH": "Estás a un solo paso de ser parte de la gran experiencia Startup Weekend.",
+        "FILL_FORM": "Llena el formulario"
+      },
+      "THANKS": {
+        "TITLE": "¡Nos vemos en el evento!",
+        "FIRST_PARAGRAPH": "¡Gracias por adquirir tu entrada! ¡No podemos esperar por ver las cosas increíbles que harás! ¡Nos vemos en el evento!"
+      },
+      "BUTTONS": {
+        "NEXT": "Siguiente",
+        "BACK": "Atrás"
+      }
+    },
     "EVENT": {
       "TITLE": "Eventos",
       "COMING_SOON": "Próximamente"
     },
     "PARTNERS": {
       "TITLE": "Nos Apoyan"
+    },
+    "SPONSOR": {
+      "BECOME_SPONSOR": "Patrocinar"
     }
+  },
+  "SCHEDULE": {
+    "TITLE": "Cronograma del evento"
   }
 }
