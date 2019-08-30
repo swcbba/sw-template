@@ -1,5 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import {
+  TranslateModule,
+  TranslateLoader,
+  TranslateFakeLoader
+} from '@ngx-translate/core';
+
 import { ThanksComponent } from './thanks.component';
 
 describe('ThanksComponent', () => {
@@ -8,9 +14,13 @@ describe('ThanksComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ThanksComponent ]
-    })
-    .compileComponents();
+      declarations: [ThanksComponent],
+      imports: [
+        TranslateModule.forRoot({
+          loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
+        })
+      ]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
