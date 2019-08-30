@@ -12,8 +12,11 @@ import { of } from 'rxjs';
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
 import { CountdownComponent } from './countdown/countdown.component';
+import { LanguageService } from '../core/services/language.service';
 import { CountdownService } from './countdown/countdown.service';
 import { EventService } from './events/event.service';
+import { PartnerService } from './partners/partner.service';
+import { MentorService } from './mentors/mentor.service';
 import { AboutComponent } from './about/about.component';
 import { MoreDetailsComponent } from './about/more-details/more-details.component';
 import { RegistrationWizardComponent } from './registration-wizard/registration-wizard.component';
@@ -23,10 +26,14 @@ import { ThanksComponent } from './registration-wizard/thanks/thanks.component';
 import { EventsComponent } from './events/events.component';
 import { PartnersComponent } from './partners/partners.component';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
-import { PartnerService } from './partners/partner.service';
+import { MentorsComponent } from './mentors/mentors.component';
 
 const angularFirestoreMock = {
   getAll: () => of([])
+};
+
+const mentorsServiceMock = {
+  getAllSorted: () => of([])
 };
 
 describe('HomeComponent', () => {
@@ -47,7 +54,8 @@ describe('HomeComponent', () => {
         ThanksComponent,
         EventsComponent,
         PartnersComponent,
-        TwoDigitsTransformPipe
+        TwoDigitsTransformPipe,
+        MentorsComponent
       ],
       imports: [
         BrowserAnimationsModule,
@@ -59,7 +67,9 @@ describe('HomeComponent', () => {
       providers: [
         CountdownService,
         { provide: EventService, useValue: angularFirestoreMock },
-        { provide: PartnerService, useValue: angularFirestoreMock }
+        { provide: PartnerService, useValue: angularFirestoreMock },
+        { provide: MentorService, useValue: mentorsServiceMock },
+        LanguageService
       ]
     }).compileComponents();
   }));

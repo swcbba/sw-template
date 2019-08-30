@@ -5,7 +5,8 @@
     "EVENTS": "Events",
     "PARTNERS": "Partners",
     "REGISTER": "Register",
-    "SCHEDULE": "Schedule"
+    "SCHEDULE": "Schedule",
+    "MENTORS": "Mentors"
   },
   "HOME": {
     "BANNER": {
@@ -74,6 +75,10 @@
     },
     "SPONSOR": {
       "BECOME_SPONSOR": "Become a sponsor"
+    },
+    "MENTORS": {
+      "TITLE": "Mentors",
+      "COMING_SOON": "Coming Soon"
     }
   },
   "SCHEDULE": {
