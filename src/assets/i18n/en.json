@@ -5,6 +5,7 @@
     "EVENTS": "Events",
     "PARTNERS": "Partners",
     "REGISTER": "Register",
+    "SCHEDULE": "Schedule",
     "MENTORS": "Mentors"
   },
   "HOME": {
@@ -34,6 +35,37 @@
         "SECOND_PARAGRAPH": "We believe that by creating the right environments, programs and initiatives, women in technology (along with their larger community) are better positioned to drive transformative change in their community and beyond."
       }
     },
+    "REGISTER": {
+      "TITLE": "Register",
+      "PRICE_TITLE": "The price of the ticket is:",
+      "EARLY_BIRD": "Bs. 179 in Early Bird (until August 31, 2019)",
+      "REGULAR_PRICE": "Bs. 249 in Regular Price (from September 1 to 20, 2019)",
+      "PAYMENT_METHOD": {
+        "TITLE": "Choose a payment method",
+        "SUBTITLE": "You can pay using one of the following methods:",
+        "BANK_DEPOSIT": "Bank deposit to one of the following accounts:",
+        "ACCOUNT_ONE": "Union Bank of Bolivia - 10000029456965, Iris Elizabeth Alemán Quispe (CI: 5300342)",
+        "ACCOUNT_TWO": "National Bank of Bolivia (BNB) - 3502039716, Adriana Huayra Gómez Peredo (CI: 6466565)",
+        "POINTS_OF_SALE": "Make the payment in one of our point of sales",
+        "POS_ONE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "QR_CODE": "Scan our QR code:"
+      },
+      "INFO": {
+        "TITLE": "Register your info",
+        "FIRST_PARAGRAPH": "We need your info and an image of your proof of payment.",
+        "SECOND_PARAGRAPH": "Fill the form. Tell us who you are, what do you do, and what are your expectations of the event.",
+        "THIRD_PARAGRAPH": "You are just one step away of being part of the Startup Weekend experience.",
+        "FILL_FORM": "Fill the form"
+      },
+      "THANKS": {
+        "TITLE": "See you at the event!",
+        "FIRST_PARAGRAPH": "Thanks for acquiring your ticket! We can't wait to see the amazing things you are going to do! See you at the event!"
+      },
+      "BUTTONS": {
+        "NEXT": "Next",
+        "BACK": "Back"
+      }
+    },
     "EVENT": {
       "TITLE": "Events",
       "COMING_SOON": "Coming Soon"
@@ -41,9 +73,15 @@
     "PARTNERS": {
       "TITLE": "Supporting Us"
     },
+    "SPONSOR": {
+      "BECOME_SPONSOR": "Become a sponsor"
+    },
     "MENTORS": {
       "TITLE": "Mentors",
       "COMING_SOON": "Coming Soon"
     }
+  },
+  "SCHEDULE": {
+    "TITLE": "Event Schedule"
   }
 }

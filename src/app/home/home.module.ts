@@ -18,6 +18,7 @@ import { ScrollSpyDirective } from './scroll-spy.directive';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 import { EventsComponent } from './events/events.component';
 import { PartnerService } from './partners/partner.service';
+import { RegistrationWizardModule } from './registration-wizard/registration-wizard.module';
 import { ParallaxModule } from '../shared/directives/parallax/parallax.module';
 import { TransparentNavbarModule } from '../shared/directives/transparent-navbar/transparent-navbar.module';
 import { MentorsComponent } from './mentors/mentors.component';
@@ -40,6 +41,7 @@ import { MentorsComponent } from './mentors/mentors.component';
     CommonModule,
     HomeRoutingModule,
     TranslateModule,
+    RegistrationWizardModule,
     ParallaxModule,
     TransparentNavbarModule
   ],

@@ -1,0 +1,13 @@
+@import '../../styles.colors';
+
+.primary-color {
+  color: $primary-color;
+}
+
+.separator {
+  border-bottom: 2px solid $primary-color;
+}
+
+.bolder {
+  font-weight: bolder;
+}
