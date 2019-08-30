@@ -19,7 +19,7 @@ export class ScheduleComponent implements OnInit {
     public languageService: LanguageService
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.schedule$ = this.scheduleService.getAll();
   }
 }
