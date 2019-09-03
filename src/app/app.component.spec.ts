@@ -9,7 +9,6 @@ import {
 
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
-import { FacebookModule, FacebookService } from 'ngx-facebook';
 import { LanguageService } from './core/services/language.service';
 
 describe('AppComponent', () => {
@@ -18,13 +17,12 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         LayoutModule,
-        FacebookModule,
         TranslateModule.forRoot({
           loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
         })
       ],
       declarations: [AppComponent],
-      providers: [LanguageService, FacebookService]
+      providers: [LanguageService]
     }).compileComponents();
   }));
 
