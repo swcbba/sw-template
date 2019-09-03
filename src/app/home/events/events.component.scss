@@ -3,6 +3,10 @@
 
 .image-container {
   background: $tabs-text-color;
+  cursor: pointer;
+  @media #{$medium-and-up} {
+    min-height: 453px;
+  }
 }
 
 .logo-sw {

@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { EventService } from './event.service';
+import { DataOrder } from './../../shared/models/data-order.enum';
 import { Event } from '../../shared/models/event.model';
 
 
@@ -17,6 +18,6 @@ export class EventsComponent implements OnInit {
   constructor(private eventService: EventService) {}
 
   ngOnInit(): void {
-    this.events$ = this.eventService.getAll();
+    this.events$ = this.eventService.getAllSorted('date', DataOrder.asc);
   }
 }
