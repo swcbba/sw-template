@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./choose-payment-method.component.scss']
 })
 export class ChoosePaymentMethodComponent {
-  simpleQRCodePath = 'assets/images/registration/early-bird.png';
+  simpleQRCodePath = 'assets/images/registration/regular-price.png';
 }

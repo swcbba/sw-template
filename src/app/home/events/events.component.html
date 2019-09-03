@@ -15,8 +15,8 @@
                   <img class="logo-sw" [src]="event.bannerUrl" [alt]="event.name">
                   <p>{{ event.place }}</p>
                   <p>{{ event.date.toDate() | date: 'mediumDate':'es' }}</p>
-                  <div class="btn-large button waves-effect">
-                    <a class="text-button" target="_blank" rel="noopener noreferrer" [href]="event.link">
+                  <div class="button-container">
+                    <a class="btn btn-large secondary-btn  waves-effect" target="_blank" rel="noopener noreferrer" [href]="event.link">
                       {{ 'HOME.BANNER.REGISTER' | translate }}
                     </a>
                   </div>
