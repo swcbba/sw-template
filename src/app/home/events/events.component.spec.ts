@@ -11,7 +11,8 @@ import { EventsComponent } from './events.component';
 import { EventService } from './event.service';
 
 const EventsServiceMock = {
-  getAll: () => of([])
+  getAll: () => of([]),
+  getAllSorted: () => of([])
 };
 
 describe('EventsComponent', () => {

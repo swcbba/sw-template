@@ -4,23 +4,27 @@
     <div class="container-cards">
       <ng-container *ngIf="(events$ | async) as events">
         <div *ngIf="events.length > 0; else comingSoon">
-          <div *ngFor="let event of events" class="col s12 m4">
+          <div *ngFor="let event of events" class="col s12 m6 l6 xl4">
             <div class="card">
-              <div class="column">
-                <div class="card-image image-item image-container">
-                  <h5 class="title-event">{{ event.name }}</h5>
-                  <img class="image" [src]="event.logoUrl" [alt]="event.name">
+              <div class="card-image image-item image-container">
+                <h5 class="title-event activator">{{ event.name }}</h5>
+                <img class="image activator" [src]="event.logoUrl" [alt]="event.name">
+              </div>
+              <div class="card-content">
+                <img class="logo-sw" [src]="event.bannerUrl" [alt]="event.name">
+                <p>{{ event.place }}</p>
+                <p>{{ event.date.toDate() | date: 'mediumDate':'es' }}</p>
+                <div class="button-container">
+                  <a class="btn btn-large secondary-btn  waves-effect" target="_blank" rel="noopener noreferrer"
+                    [href]="event.link">
+                    {{ 'HOME.BANNER.REGISTER' | translate }}
+                  </a>
                 </div>
-                <div class="card-content">
-                  <img class="logo-sw" [src]="event.bannerUrl" [alt]="event.name">
-                  <p>{{ event.place }}</p>
-                  <p>{{ event.date.toDate() | date: 'mediumDate':'es' }}</p>
-                  <div class="btn-large button waves-effect">
-                    <a class="text-button" target="_blank" rel="noopener noreferrer" [href]="event.link">
-                      {{ 'HOME.BANNER.REGISTER' | translate }}
-                    </a>
-                  </div>
-                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i
+                    class="material-icons right">close</i>{{ event.name }}</span>
+                <p>{{ event.description }}</p>
               </div>
             </div>
           </div>

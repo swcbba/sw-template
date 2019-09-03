@@ -29,7 +29,8 @@ import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 import { MentorsComponent } from './mentors/mentors.component';
 
 const angularFirestoreMock = {
-  getAll: () => of([])
+  getAll: () => of([]),
+  getAllSorted: () => of([])
 };
 
 const mentorsServiceMock = {

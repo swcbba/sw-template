@@ -3,6 +3,10 @@
 
 .image-container {
   background: $tabs-text-color;
+  cursor: pointer;
+  @media #{$medium-and-up} {
+    min-height: 453px;
+  }
 }
 
 .logo-sw {
@@ -24,15 +28,8 @@
   justify-content: center;
 }
 
-.button {
-  color: $input-background;
+.button-container {
   margin-top: 10px;
-  background-color: $tabs-text-color;
-  width: 100%;
-}
-
-.text-button {
-  color: $input-background;
 }
 
 .title-event {
