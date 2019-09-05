@@ -17,6 +17,36 @@
       </ul>
     </div>
   </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        {{ 'HOME.REGISTER.ALREADY_PAID_TITLE' | translate }}
+      </p>
+      <ul>
+        <li>
+          {{ 'HOME.REGISTER.ALREADY_PAID_SUBTITLE' | translate }}
+        </li>
+      </ul>
+      <div class="center-align">
+        <a class="btn btn-large secondary-btn waves-effect waves-light" [href]="registrationFormUrl" target="_blank"
+          rel="noopener noreferrer">
+          {{ 'HOME.REGISTER.INFO.FILL_FORM' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        {{ 'HOME.REGISTER.STEPS_TITLE' | translate }}
+      </p>
+      <ul>
+        <li>
+          {{ 'HOME.REGISTER.STEPS_SUBTITLE' | translate }}:
+        </li>
+      </ul>
+    </div>
+  </div>
   <div class="hide-on-small-only">
     <mat-horizontal-stepper [linear]="isLinear">
       <mat-step [label]="'HOME.REGISTER.PAYMENT_METHOD.TITLE' | translate">
