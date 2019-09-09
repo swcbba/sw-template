@@ -1,38 +1,59 @@
 @import '../../../styles.colors';
 @import '../../../styles.variables';
 
-.image-container {
-  background: $tabs-text-color;
-  cursor: pointer;
-  @media #{$medium-and-up} {
-    min-height: 453px;
+.card {
+  @media #{$extra-large-and-up} {
+    margin: 0.5rem 1.5rem 1rem;
   }
 }
 
-.logo-sw {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
+.card-image {
+  position: relative;
+  height: 300px;
 }
 
-.image {
-  padding: 20px 60px 60px;
-}
+.card-content {
+  position: relative;
+  height: 300px;
 
-.card {
-  max-width: 345px;
-}
+  p {
+    overflow: hidden;
+    line-height: 1.5em;
+  }
 
-.container-cards {
-  width: 100%;
-  justify-content: center;
-}
-
-.button-container {
-  margin-top: 10px;
+  .button-container {
+    position: absolute;
+    width: calc(100% - 48px);
+    bottom: 24px;
+  }
 }
 
 .title-event {
   color: $input-background;
-  padding-top: 40px;
+  position: absolute;
+  top: 0;
+  padding-top: 0;
+  width: 100%;
+}
+
+.image-container {
+  background: $primary-color;
+
+  .image {
+    max-height: 100%;
+    padding: 70px 20px 20px;
+  }
+}
+
+.logo-sw {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.place {
+  max-height: 3em;
+}
+
+.date {
+  max-height: 1.5em;
 }

@@ -30,8 +30,11 @@ jobs:
           name: Testing
           command: npm run test
       - run:
+          name: Allow indexing for production site
+          command: sed -i 's/<meta name="robots" content="noindex">/<!-- <meta name="robots" content="noindex"> -->/' src/index.html
+      - run:
           name: Building
-          command: npm run build:dev
+          command: npm run build:prod
       - save_cache:
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:

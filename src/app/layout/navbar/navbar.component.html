@@ -9,14 +9,14 @@
         <i class="fas fa-bars"></i>
       </a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#banner">{{ 'NAVBAR.HOME' | translate }}</a></li>
-        <li><a href="#about">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
-        <li><a href="#events">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
-        <li><a href="#partners">{{ 'NAVBAR.PARTNERS' | translate }}</a></li>
+        <li><a routerLink="/" fragment="home">{{ 'NAVBAR.HOME' | translate }}</a></li>
+        <li><a routerLink="/" fragment="about">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
+        <li><a routerLink="/" fragment="events">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
         <li><a routerLink="schedule">{{ 'NAVBAR.SCHEDULE' | translate }}</a></li>
-        <li><a href="#mentors">{{ 'NAVBAR.MENTORS' | translate }}</a></li>
+        <!-- TODO: Enable when we have data -->
+        <!-- <li><a routerLink="/" fragment="mentors">{{ 'NAVBAR.MENTORS' | translate }}</a></li> -->
         <li>
-          <a class="btn waves-effect waves-light" href="#registration">
+          <a class="btn waves-effect waves-light" routerLink="/" fragment="registration">
             {{ 'NAVBAR.REGISTER' | translate }}
           </a>
         </li>
@@ -25,14 +25,14 @@
   </nav>
 
   <ul swSidenav class="sidenav" id="mobile-menu">
-    <li><a class="sidenav-close" href="#banner">{{ 'NAVBAR.HOME' | translate }}</a></li>
-    <li><a class="sidenav-close" href="#about">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
-    <li><a class="sidenav-close" href="#events">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
-    <li><a class="sidenav-close" href="#partners">{{ 'NAVBAR.PARTNERS' | translate }}</a></li>
+    <li><a class="sidenav-close" routerLink="/" fragment="home">{{ 'NAVBAR.HOME' | translate }}</a></li>
+    <li><a class="sidenav-close" routerLink="/" fragment="about">{{ 'NAVBAR.ABOUT' | translate }}</a></li>
+    <li><a class="sidenav-close" routerLink="/" fragment="events">{{ 'NAVBAR.EVENTS' | translate }}</a></li>
     <li><a class="sidenav-close" routerLink="schedule">{{ 'NAVBAR.SCHEDULE' | translate }}</a></li>
-    <li><a class="sidenav-close" href="#mentors">{{ 'NAVBAR.MENTORS' | translate }}</a></li>
+    <!-- TODO: Enable when we have data -->
+    <!-- <li><a class="sidenav-close" routerLink="/" fragment="mentors">{{ 'NAVBAR.MENTORS' | translate }}</a></li> -->
     <li>
-      <a class="btn waves-effect waves-light sidenav-close" href="#registration">
+      <a class="btn waves-effect waves-light sidenav-close" routerLink="/" fragment="registration">
         {{ 'NAVBAR.REGISTER' | translate }}
       </a>
     </li>
