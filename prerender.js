@@ -7,6 +7,7 @@ const PORT = 4000;
 const HOST = `http://localhost:${PORT}`;
 const ROOT_PATH = 'dist/sw-template';
 const STATIC_PATHS = require('./static-paths');
+const MESSENGER_BUTTON = require('./messenger-button');
 
 async function main() {
   const app = Express();
@@ -28,9 +29,14 @@ async function main() {
   for (const currentPath of STATIC_PATHS.PATHS) {
     await page.goto(`${HOST}/${currentPath}`);
 
-    const result = await page.evaluate(
+    let result = await page.evaluate(
       () => '<!doctype html>' + document.documentElement.outerHTML
     );
+
+    if (!currentPath) {
+      result = addMessengerButtonToHome(result);
+    }
+
     const file = join(
       process.cwd(),
       ROOT_PATH,
@@ -48,6 +54,15 @@ async function main() {
 
   browser.close();
   server.close();
+}
+
+function addMessengerButtonToHome(indexContent) {
+  const closeBodyIndex = indexContent.indexOf('</body>');
+  return (
+    indexContent.slice(0, closeBodyIndex) +
+    MESSENGER_BUTTON +
+    indexContent.slice(closeBodyIndex)
+  );
 }
 
 main()

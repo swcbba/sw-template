@@ -38,8 +38,12 @@
     "REGISTER": {
       "TITLE": "Register",
       "PRICE_TITLE": "The price of the ticket is:",
-      "EARLY_BIRD": "Bs. 179 in Early Bird (until August 31, 2019)",
-      "REGULAR_PRICE": "Bs. 249 in Regular Price (from September 1 to 20, 2019)",
+      "EARLY_BIRD": "Bs. 179 in Early Bird (until September 11, 2019)",
+      "REGULAR_PRICE": "Bs. 249 in Regular Price (from September 12 to 20, 2019)",
+      "ALREADY_PAID_TITLE": "Have you already made the deposit?",
+      "ALREADY_PAID_SUBTITLE": "We need your data and an image of your proof of payment. Fill out the form. And that's it! Thanks for acquiring your ticket!. See you at the event! ",
+      "STEPS_TITLE": "Haven't you made the deposit yet?",
+      "STEPS_SUBTITLE": "Follow the steps below",
       "PAYMENT_METHOD": {
         "TITLE": "Choose a payment method",
         "SUBTITLE": "You can pay using one of the following methods:",
