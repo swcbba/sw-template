@@ -7,6 +7,12 @@
   }
 }
 
+.logo-sw {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
 .card-image {
   position: relative;
   height: 300px;
@@ -56,4 +62,12 @@
 
 .date {
   max-height: 1.5em;
+}
+
+.data {
+  margin-left: 15px;
+}
+
+.price {
+  font-weight: 600;
 }
