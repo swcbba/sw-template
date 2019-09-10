@@ -12,7 +12,7 @@
 .logo-sw {
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100%;
+  width: 80%;
 }
 
 .image {
@@ -35,4 +35,12 @@
 .title-event {
   color: $input-background;
   padding-top: 40px;
+}
+
+.data {
+  margin-left: 15px;
+}
+
+.price {
+  font-weight: 600;
 }
