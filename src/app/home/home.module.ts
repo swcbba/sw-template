@@ -14,14 +14,13 @@ import { MentorService } from './mentors/mentor.service';
 import { MetricsComponent } from './metrics/metrics.component';
 import { MoreDetailsComponent } from './about/more-details/more-details.component';
 import { PartnersComponent } from './partners/partners.component';
-import { ScrollSpyDirective } from './scroll-spy.directive';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 import { EventsComponent } from './events/events.component';
 import { PartnerService } from './partners/partner.service';
 import { RegistrationWizardModule } from './registration-wizard/registration-wizard.module';
+import { MentorsComponent } from './mentors/mentors.component';
 import { ParallaxModule } from '../shared/directives/parallax/parallax.module';
 import { TransparentNavbarModule } from '../shared/directives/transparent-navbar/transparent-navbar.module';
-import { MentorsComponent } from './mentors/mentors.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,6 @@ import { MentorsComponent } from './mentors/mentors.component';
     MetricsComponent,
     MoreDetailsComponent,
     PartnersComponent,
-    ScrollSpyDirective,
     TwoDigitsTransformPipe,
     EventsComponent,
     MentorsComponent

@@ -7,3 +7,4 @@ export const REGISTRATION_FORM_URL =
 export const BRIEF_URL =
   // tslint:disable-next-line: max-line-length
   'https://firebasestorage.googleapis.com/v0/b/swcbba-women.appspot.com/o/Brief%20de%20presentacion%20-%20SW%20Women%20CBBA%202019.pdf?alt=media&token=db31b32b-f093-4ee3-a0d9-8f03d8c7437b';
+export const CURRENCY = 'Bs.';
