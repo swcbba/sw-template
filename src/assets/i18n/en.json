@@ -87,5 +87,8 @@
   },
   "SCHEDULE": {
     "TITLE": "Event Schedule"
+  },
+  "FAQ": {
+    "TITLE": "Frequent Ask Questions"
   }
 }

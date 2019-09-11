@@ -87,5 +87,8 @@
   },
   "SCHEDULE": {
     "TITLE": "Cronograma del evento"
+  },
+  "FAQ": {
+    "TITLE": "Preguntas Frecuentes"
   }
 }

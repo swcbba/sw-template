@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+
+import { FAQ_SLIDES_URL } from '../shared/constants/event-data.constant';
 
 @Component({
   selector: 'sw-faq',
@@ -6,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./faq.component.scss']
 })
 export class FaqComponent implements OnInit {
-  constructor() {}
+  faqSlides: SafeResourceUrl;
+  constructor(private sanitizer: DomSanitizer) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.faqSlides = this.sanitizer.bypassSecurityTrustResourceUrl(
+      FAQ_SLIDES_URL
+    );
+  }
 }
