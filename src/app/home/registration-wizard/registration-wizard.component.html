@@ -9,7 +9,9 @@
       </p>
       <ul>
         <li>
-          {{ 'HOME.REGISTER.EARLY_BIRD' | translate }}
+          <s>
+            {{ 'HOME.REGISTER.EARLY_BIRD' | translate }}
+          </s>
         </li>
         <li>
           {{ 'HOME.REGISTER.REGULAR_PRICE' | translate }}
@@ -51,14 +53,17 @@
     <mat-horizontal-stepper [linear]="isLinear">
       <mat-step [label]="'HOME.REGISTER.PAYMENT_METHOD.TITLE' | translate">
         <div class="right-align">
-          <button class="btn secondary-btn waves-effect waves-light" matStepperNext>{{ 'HOME.REGISTER.BUTTONS.NEXT' | translate }}</button>
+          <button class="btn secondary-btn waves-effect waves-light"
+            matStepperNext>{{ 'HOME.REGISTER.BUTTONS.NEXT' | translate }}</button>
         </div>
         <sw-choose-payment-method></sw-choose-payment-method>
       </mat-step>
       <mat-step [label]="'HOME.REGISTER.INFO.TITLE' | translate">
         <div class="right-align">
-          <button class="btn waves-effect waves-light" matStepperPrevious>{{ 'HOME.REGISTER.BUTTONS.BACK' | translate }}</button>
-          <button class="btn secondary-btn waves-effect waves-light" matStepperNext>{{ 'HOME.REGISTER.BUTTONS.NEXT' | translate }}</button>
+          <button class="btn waves-effect waves-light"
+            matStepperPrevious>{{ 'HOME.REGISTER.BUTTONS.BACK' | translate }}</button>
+          <button class="btn secondary-btn waves-effect waves-light"
+            matStepperNext>{{ 'HOME.REGISTER.BUTTONS.NEXT' | translate }}</button>
         </div>
         <sw-register-your-info></sw-register-your-info>
       </mat-step>
@@ -72,14 +77,17 @@
       <mat-step [label]="'HOME.REGISTER.PAYMENT_METHOD.TITLE' | translate">
         <sw-choose-payment-method></sw-choose-payment-method>
         <div class="right-align">
-          <button class="btn waves-effect waves-light" matStepperNext>{{ 'HOME.REGISTER.BUTTONS.NEXT' | translate }}</button>
+          <button class="btn waves-effect waves-light"
+            matStepperNext>{{ 'HOME.REGISTER.BUTTONS.NEXT' | translate }}</button>
         </div>
       </mat-step>
       <mat-step [label]="'HOME.REGISTER.INFO.TITLE' | translate">
         <sw-register-your-info></sw-register-your-info>
         <div class="right-align">
-          <button class="btn waves-effect waves-light" matStepperPrevious>{{ 'HOME.REGISTER.BUTTONS.BACK' | translate }}</button>
-          <button class="btn secondary-btn waves-effect waves-light" matStepperNext>{{ 'HOME.REGISTER.BUTTONS.NEXT' | translate }}</button>
+          <button class="btn waves-effect waves-light"
+            matStepperPrevious>{{ 'HOME.REGISTER.BUTTONS.BACK' | translate }}</button>
+          <button class="btn secondary-btn waves-effect waves-light"
+            matStepperNext>{{ 'HOME.REGISTER.BUTTONS.NEXT' | translate }}</button>
         </div>
       </mat-step>
       <mat-step [label]="'HOME.REGISTER.THANKS.TITLE' | translate">
