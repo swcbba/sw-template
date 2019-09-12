@@ -1,0 +1,18 @@
+@import '../../../styles.colors';
+
+.metric-container {
+  background-color: $primary-color;
+}
+
+.text {
+  color: $secondary-color;
+}
+
+.metric-value {
+  width: 100%;
+  height: 0;
+  padding: 50% 0;
+  border-radius: 50%;
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+}
