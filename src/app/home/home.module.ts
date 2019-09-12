@@ -11,6 +11,7 @@ import { CountdownComponent } from './countdown/countdown.component';
 import { CountdownService } from './countdown/countdown.service';
 import { EventService } from './events/event.service';
 import { MentorService } from './mentors/mentor.service';
+import { MetricService } from './metrics/metric.service';
 import { MetricsComponent } from './metrics/metrics.component';
 import { MoreDetailsComponent } from './about/more-details/more-details.component';
 import { PartnersComponent } from './partners/partners.component';
@@ -45,6 +46,6 @@ import { TransparentNavbarModule } from '../shared/directives/transparent-navbar
     ParallaxModule,
     TransparentNavbarModule
   ],
-  providers: [CountdownService, EventService, PartnerService, MentorService]
+  providers: [CountdownService, EventService, PartnerService, MentorService, MetricService]
 })
 export class HomeModule {}

@@ -17,6 +17,7 @@ import { CountdownService } from './countdown/countdown.service';
 import { EventService } from './events/event.service';
 import { PartnerService } from './partners/partner.service';
 import { MentorService } from './mentors/mentor.service';
+import { MetricService } from './metrics/metric.service';
 import { AboutComponent } from './about/about.component';
 import { MoreDetailsComponent } from './about/more-details/more-details.component';
 import { RegistrationWizardComponent } from './registration-wizard/registration-wizard.component';
@@ -28,6 +29,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 import { MentorsComponent } from './mentors/mentors.component';
 import { BenefitComponent } from './benefit/benefit.component';
+import { MetricsComponent } from './metrics/metrics.component';
 
 const angularFirestoreMock = {
   getAll: () => of([]),
@@ -58,7 +60,8 @@ describe('HomeComponent', () => {
         PartnersComponent,
         TwoDigitsTransformPipe,
         MentorsComponent,
-        BenefitComponent
+        BenefitComponent,
+        MetricsComponent
       ],
       imports: [
         BrowserAnimationsModule,
@@ -72,6 +75,7 @@ describe('HomeComponent', () => {
         { provide: EventService, useValue: angularFirestoreMock },
         { provide: PartnerService, useValue: angularFirestoreMock },
         { provide: MentorService, useValue: mentorsServiceMock },
+        { provide: MetricService, useValue: angularFirestoreMock },
         LanguageService
       ]
     }).compileComponents();
