@@ -27,6 +27,7 @@ import { EventsComponent } from './events/events.component';
 import { PartnersComponent } from './partners/partners.component';
 import { TwoDigitsTransformPipe } from './countdown/two-digits-transform.pipe';
 import { MentorsComponent } from './mentors/mentors.component';
+import { BenefitComponent } from './benefit/benefit.component';
 
 const angularFirestoreMock = {
   getAll: () => of([]),
@@ -56,7 +57,8 @@ describe('HomeComponent', () => {
         EventsComponent,
         PartnersComponent,
         TwoDigitsTransformPipe,
-        MentorsComponent
+        MentorsComponent,
+        BenefitComponent
       ],
       imports: [
         BrowserAnimationsModule,

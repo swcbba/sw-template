@@ -19,6 +19,7 @@ import { EventsComponent } from './events/events.component';
 import { PartnerService } from './partners/partner.service';
 import { RegistrationWizardModule } from './registration-wizard/registration-wizard.module';
 import { MentorsComponent } from './mentors/mentors.component';
+import { BenefitComponent } from './benefit/benefit.component';
 import { ParallaxModule } from '../shared/directives/parallax/parallax.module';
 import { TransparentNavbarModule } from '../shared/directives/transparent-navbar/transparent-navbar.module';
 
@@ -33,7 +34,8 @@ import { TransparentNavbarModule } from '../shared/directives/transparent-navbar
     PartnersComponent,
     TwoDigitsTransformPipe,
     EventsComponent,
-    MentorsComponent
+    MentorsComponent,
+    BenefitComponent
   ],
   imports: [
     CommonModule,
