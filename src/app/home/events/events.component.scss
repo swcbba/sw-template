@@ -20,12 +20,7 @@
 
 .card-content {
   position: relative;
-  height: 300px;
-
-  p {
-    overflow: hidden;
-    line-height: 1.5em;
-  }
+  height: 350px;
 
   .button-container {
     position: absolute;
@@ -56,18 +51,16 @@
   width: 100%;
 }
 
-.place {
-  max-height: 3em;
-}
-
-.date {
-  max-height: 1.5em;
-}
-
 .data {
-  margin-left: 15px;
-}
+  margin: 0 10px;
 
-.price {
-  font-weight: 600;
+  p {
+    overflow: hidden;
+    line-height: 1.5em;
+    max-height: 1.5em;
+  }
+
+  .place {
+    max-height: 4.5em;
+  }
 }

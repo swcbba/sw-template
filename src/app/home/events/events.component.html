@@ -12,7 +12,7 @@
             <div class="card-content">
               <img class="logo-sw" [src]="event.bannerUrl" [alt]="event.name">
               <div class="data">
-                <p>
+                <p class="place">
                   <i class="fas fa-map-marker-alt"></i>
                   {{ event.place }}
                 </p>
@@ -27,7 +27,9 @@
                 <p *ngIf="event.price">
                   <i class="fas fa-money-bill-alt"></i>
                   <span class="price">
-                    {{ event.price }} {{ currency }}
+                    <b>
+                      {{ event.price }} {{ currency }}
+                    </b>
                   </span>
                 </p>
               </div>
