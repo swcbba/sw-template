@@ -2,6 +2,7 @@
   "NAVBAR": {
     "HOME": "Inicio",
     "ABOUT": "Acerca de",
+    "BENEFIT": "Beneficios",
     "EVENTS": "Eventos",
     "PARTNERS": "Patrocinadores",
     "REGISTER": "Inscríbete",
@@ -35,6 +36,16 @@
         "FIRST_PARAGRAPH": "Queremos continuar los esfuerzos para cultivar una comunidad totalmente inclusiva. Un componente clave de esa visión es capacitar a las mujeres para que persigan sus sueños y construyan herramientas que cambien el mundo.",
         "SECOND_PARAGRAPH": "Creemos que al crear los entornos, programas e iniciativas correctos, las mujeres en tecnología (junto con su comunidad más grande) están mejor posicionadas para impulsar un cambio transformador en su comunidad y más allá."
       }
+    },
+    "BENEFIT": {
+      "TITLE": "¿Qué cubre el ticket?",
+      "FOOD": "Alimentación completa durante el evento, 2 almuerzos, 2 cenas, 2 desayunos",
+      "COFFEE": "Café y agua 24/7 durante el evento",
+      "WIFI": "WiFi 24/7 durante el evento",
+      "COACHING": "Mentoría de primera mano con expertos en diferentes áreas",
+      "TSHIRT": "Polera oficial del evento",
+      "EVENTS": "Acceso libre a eventos previos",
+      "STATIONERY": "Material de escritorio a usarse durante el evento"
     },
     "REGISTER": {
       "TITLE": "Regístrate",
