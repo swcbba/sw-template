@@ -2,12 +2,12 @@
   <div class="parallax container center-align section">
     <h3 class="text">{{ 'HOME.METRICS.TITLE' | translate }}</h3>
     <h6 class="text">{{ 'HOME.METRICS.DETAIL' | translate }}</h6>
-    <div class="row center-align">
-      <div *ngFor="let metric of metrics$ | async" class="col s12 m12 xl3">
-        <div>
-          <h1 class="metric-value">{{ metric.value }}</h1>
-          <h5 class="text">{{ languageService.currentLanguage === 'es' ? metric.nameSp : metric.nameEn }}</h5>
+    <div class="row metrict-flex">
+      <div *ngFor="let metric of metrics$ | async" class="metrict-content">
+        <div class="metric-value valign-wrapper">
+          <h3 class="metric-numbers">{{ metric.value }}</h3>
         </div>
+        <h5 class="text">{{ languageService.currentLanguage === 'es' ? metric.nameSp : metric.nameEn }}</h5>
       </div>
     </div>
   </div>

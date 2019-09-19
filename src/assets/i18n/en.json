@@ -63,7 +63,7 @@
         "ACCOUNT_TWO": "National Bank of Bolivia (BNB) - 3502039716, Adriana Huayra Gómez Peredo (CI: 6466565)",
         "POINTS_OF_SALE": "Make the payment in one of our point of sales",
         "POS_ONE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "QR_CODE": "Scan our QR code:"
+        "QR_CODE": "Scan our QR code through the application of your bank:"
       },
       "INFO": {
         "TITLE": "Register your info",
@@ -92,7 +92,7 @@
       "BECOME_SPONSOR": "Become a sponsor"
     },
     "MENTORS": {
-      "TITLE": "Mentors",
+      "TITLE": "Mentors and Jurors",
       "COMING_SOON": "Coming Soon"
     },
     "METRICS": {
