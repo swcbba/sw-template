@@ -11,8 +11,28 @@
             </div>
             <div class="card-content">
               <img class="logo-sw" [src]="event.bannerUrl" [alt]="event.name">
-              <p class="place">{{ event.place }}</p>
-              <p class="date">{{ event.date.toDate() | date: 'mediumDate':'es' }}</p>
+              <div class="data">
+                <p class="place">
+                  <i class="fas fa-map-marker-alt"></i>
+                  {{ event.place }}
+                </p>
+                <p>
+                  <i class="far fa-calendar-alt"></i>
+                  {{ event.date.toDate() | date: 'mediumDate':'es' }}
+                </p>
+                <p>
+                  <i class="fas fa-clock"></i>
+                  {{ event.date.toDate() | date: 'shortTime':'es' }}
+                </p>
+                <p *ngIf="event.price">
+                  <i class="fas fa-money-bill-alt"></i>
+                  <span class="price">
+                    <b>
+                      {{ event.price }} {{ currency }}
+                    </b>
+                  </span>
+                </p>
+              </div>
               <div class="button-container">
                 <a class="btn btn-large secondary-btn  waves-effect" target="_blank" rel="noopener noreferrer"
                   [href]="event.link">

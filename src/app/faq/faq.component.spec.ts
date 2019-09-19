@@ -7,35 +7,25 @@ import {
 } from '@ngx-translate/core';
 import { of } from 'rxjs';
 
-import { LanguageService } from '../../core/services/language.service';
-import { MetricsComponent } from './metrics.component';
-import { MetricService } from './metric.service';
+import { FaqComponent } from './faq.component';
 
-const MetricsServiceMock = {
-  getAll: () => of([]),
-};
-
-describe('MetricsComponent', () => {
-  let component: MetricsComponent;
-  let fixture: ComponentFixture<MetricsComponent>;
+describe('FaqComponent', () => {
+  let component: FaqComponent;
+  let fixture: ComponentFixture<FaqComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MetricsComponent ],
+      declarations: [FaqComponent],
       imports: [
         TranslateModule.forRoot({
           loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
         })
-      ],
-      providers: [
-        { provide: MetricService, useValue: MetricsServiceMock }, LanguageService
       ]
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MetricsComponent);
+    fixture = TestBed.createComponent(FaqComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

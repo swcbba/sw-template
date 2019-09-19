@@ -7,6 +7,12 @@
   }
 }
 
+.logo-sw {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
 .card-image {
   position: relative;
   height: 300px;
@@ -14,12 +20,7 @@
 
 .card-content {
   position: relative;
-  height: 300px;
-
-  p {
-    overflow: hidden;
-    line-height: 1.5em;
-  }
+  height: 350px;
 
   .button-container {
     position: absolute;
@@ -50,10 +51,16 @@
   width: 100%;
 }
 
-.place {
-  max-height: 3em;
-}
+.data {
+  margin: 0 10px;
 
-.date {
-  max-height: 1.5em;
+  p {
+    overflow: hidden;
+    line-height: 1.5em;
+    max-height: 1.5em;
+  }
+
+  .place {
+    max-height: 4.5em;
+  }
 }

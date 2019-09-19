@@ -19,6 +19,11 @@ const routes: Routes = [
       import('./schedule/schedule.module').then(module => module.ScheduleModule)
   },
   {
+    path: 'faq',
+    loadChildren: () =>
+      import('./faq/faq.module').then(module => module.FaqModule)
+  },
+  {
     // TODO: Create a 404 component
     path: '**',
     redirectTo: ''

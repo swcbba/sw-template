@@ -2,11 +2,13 @@
   "NAVBAR": {
     "HOME": "Home",
     "ABOUT": "About",
+    "BENEFIT": "Benefit",
     "EVENTS": "Events",
     "PARTNERS": "Partners",
     "REGISTER": "Register",
     "SCHEDULE": "Schedule",
-    "MENTORS": "Mentors"
+    "MENTORS": "Mentors",
+    "FAQ": "Faq"
   },
   "HOME": {
     "BANNER": {
@@ -35,6 +37,15 @@
         "SECOND_PARAGRAPH": "We believe that by creating the right environments, programs and initiatives, women in technology (along with their larger community) are better positioned to drive transformative change in their community and beyond."
       }
     },
+    "BENEFIT": {
+      "TITLE": "What does the ticket cover?",
+      "FOOD": "Full meals during the event, 2 lunches, 2 dinners, 2 breakfasts",
+      "COFFEE": "Coffee and water 24/7 during the event",
+      "WIFI": "WiFi 24/7 during the event",
+      "COACHING": "First-hand coaching with experts in different areas",
+      "TSHIRT": "Official T-shirt of the event",
+      "STATIONERY": "Stationery to be used during the event"
+    },
     "REGISTER": {
       "TITLE": "Register",
       "PRICE_TITLE": "The price of the ticket is:",
@@ -52,7 +63,7 @@
         "ACCOUNT_TWO": "National Bank of Bolivia (BNB) - 3502039716, Adriana Huayra Gómez Peredo (CI: 6466565)",
         "POINTS_OF_SALE": "Make the payment in one of our point of sales",
         "POS_ONE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "QR_CODE": "Scan our QR code:"
+        "QR_CODE": "Scan our QR code through the application of your bank:"
       },
       "INFO": {
         "TITLE": "Register your info",
@@ -81,11 +92,18 @@
       "BECOME_SPONSOR": "Become a sponsor"
     },
     "MENTORS": {
-      "TITLE": "Mentors",
+      "TITLE": "Mentors and Jurors",
       "COMING_SOON": "Coming Soon"
+    },
+    "METRICS": {
+      "TITLE": "\nWe cultivate an inclusive community",
+      "DETAIL": "Incorporating a culture that does not make women feel they have to prove themselves and support them so that they find a new level of confidence in their abilities to succeed."
     }
   },
   "SCHEDULE": {
     "TITLE": "Event Schedule"
+  },
+  "FAQ": {
+    "TITLE": "Frequent Ask Questions"
   }
 }

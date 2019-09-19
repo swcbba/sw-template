@@ -2,11 +2,13 @@
   "NAVBAR": {
     "HOME": "Inicio",
     "ABOUT": "Acerca de",
+    "BENEFIT": "Beneficios",
     "EVENTS": "Eventos",
     "PARTNERS": "Patrocinadores",
     "REGISTER": "Inscríbete",
     "SCHEDULE": "Cronograma",
-    "MENTORS": "Mentores"
+    "MENTORS": "Mentores",
+    "FAQ": "Preguntas Frecuentes"
   },
   "HOME": {
     "BANNER": {
@@ -35,6 +37,15 @@
         "SECOND_PARAGRAPH": "Creemos que al crear los entornos, programas e iniciativas correctos, las mujeres en tecnología (junto con su comunidad más grande) están mejor posicionadas para impulsar un cambio transformador en su comunidad y más allá."
       }
     },
+    "BENEFIT": {
+      "TITLE": "¿Qué cubre el ticket?",
+      "FOOD": "Alimentación completa durante el evento, 2 almuerzos, 2 cenas, 2 desayunos",
+      "COFFEE": "Café y agua 24/7 durante el evento",
+      "WIFI": "WiFi 24/7 durante el evento",
+      "COACHING": "Mentoría de primera mano con expertos en diferentes áreas",
+      "TSHIRT": "Polera oficial del evento",
+      "STATIONERY": "Material de escritorio a usarse durante el evento"
+    },
     "REGISTER": {
       "TITLE": "Regístrate",
       "PRICE_TITLE": "El precio de la entrada es:",
@@ -52,7 +63,7 @@
         "ACCOUNT_TWO": "Banco Nacional de Bolivia (BNB) - 3502039716, Adriana Huayra Gómez Peredo (CI: 6466565)",
         "POINTS_OF_SALE": "Realizar el pago en uno de nuestros puntos físicos:",
         "POS_ONE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "QR_CODE": "Escanear nuestro código QR:"
+        "QR_CODE": "Escanear nuestro código QR utilizando la aplicación de tu banco:"
       },
       "INFO": {
         "TITLE": "Registra tus datos",
@@ -81,11 +92,18 @@
       "BECOME_SPONSOR": "Patrocinar"
     },
     "MENTORS": {
-      "TITLE": "Mentores",
+      "TITLE": "Mentores y Jurados",
       "COMING_SOON": "Próximamente"
+    },
+    "METRICS": {
+      "TITLE": "Cultivamos una comunidad inclusiva",
+      "DETAIL": "Incorporando una cultura que no haga que las mujeres sientan que tienen que probarse a sí mismas y apoyarlas para que encuentren un nuevo nivel de confianza en sus habilidades para tener éxito."
     }
   },
   "SCHEDULE": {
     "TITLE": "Cronograma del evento"
+  },
+  "FAQ": {
+    "TITLE": "Preguntas Frecuentes"
   }
 }
