@@ -3,24 +3,26 @@
     <h3 class="section-title">{{ 'HOME.MENTORS.TITLE' | translate }}</h3>
     <ng-container *ngIf="(mentors$ | async) as mentors">
       <div *ngIf="mentors.length > 0; else comingSoon">
-        <div *ngFor="let mentor of mentors" class="col s12 m4">
+        <div *ngFor="let mentor of mentors" class="col s12 m6 xl4">
           <div class="card">
-            <img class="circle photo-url" [src]="mentor.photoUrl" [alt]="mentor.name">
+            <div class="image-container">
+              <img class="circle photo-url" [src]="mentor.photoUrl" [alt]="mentor.name">
+            </div>
             <div class="card-content">
               <h6>{{ languageService.currentLanguage === 'es' ? mentor.roleSp : mentor.roleEn }}</h6>
               <span class="card-title activator grey-text text-darken-4">
                 {{ mentor.name }}
                 <!-- <i class="fas fa-angle-up right"></i> -->
               </span>
-              <h6>{{ mentor.placeOfBirth }}</h6>
+              <h6 class="place-of-birth">{{ mentor.placeOfBirth }}</h6>
             </div>
-<!--            TODO: Enable when we have bios-->
-<!--            <div class="card-reveal">-->
-<!--                <span class="card-title">-->
-<!--                  <i class="fas fa-angle-down right"></i>-->
-<!--                </span>-->
-<!--              <p>{{ mentor.biography }}</p>-->
-<!--            </div>-->
+            <!-- TODO: Enable when we have bios -->
+            <!-- <div class="card-reveal">
+               <span class="card-title">
+                 <i class="fas fa-angle-down right"></i>
+               </span>
+             <p>{{ mentor.biography }}</p>
+           </div> -->
           </div>
         </div>
       </div>

@@ -1,5 +1,31 @@
+.image-container {
+  overflow: hidden;
+  padding-top: 30px;
+  height: 250px;
+  text-align: center;
+}
+
 .photo-url {
   margin: 5px;
-  width: 50%;
-  height: 100%;
+  width: 60%;
+  height: auto;
+}
+
+.card-content {
+  h6 {
+    overflow: hidden;
+    height: 18px;
+    line-height: 18px;
+  }
+
+  span {
+    overflow: hidden;
+    height: 64px;
+    line-height: 32px;
+  }
+
+  .place-of-birth {
+    overflow: hidden;
+    height: 36px;
+  }
 }
