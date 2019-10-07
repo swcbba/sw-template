@@ -26,13 +26,13 @@ jobs:
       - run:
           name: Inject keys
           command: npm run keys:inject
-      # TODO - Fix problem with testing and CircleCi
-      # - run:
-      #     name: Testing
-      #     command: npm run test
       - run:
-          name: Allow indexing for production site
-          command: sed -i 's/<meta name="robots" content="noindex">/<!-- <meta name="robots" content="noindex"> -->/' src/index.html
+          name: Testing
+          command: npm run test
+      # Enable when site is ready
+      # - run:
+      #     name: Allow indexing for production site
+      #     command: sed -i 's/<meta name="robots" content="noindex">/<!-- <meta name="robots" content="noindex"> -->/' src/index.html
       - run:
           name: Building
           command: npm run build:prod
