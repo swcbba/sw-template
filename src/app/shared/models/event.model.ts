@@ -11,4 +11,5 @@ export interface Event extends DataType {
   name: string;
   place: string;
   price: number;
+  type: string;
 }
